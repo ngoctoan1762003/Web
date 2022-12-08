@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <style>
+            @keyframes example{
+                0%{
+                    transform: translate(100px, -100px);
+                }
+                25%{
+                    transform: translate(200px, 0px);
+                }
+                50%{
+                    transform: translate(100px, 100px);
+                }
+                75%{
+                    transform: translate(0px, 0px);
+                }
+                100%{
+                    transform: translate(100px, -100px);
+                }
+            }
+
+            @keyframes progressbar{
+                from {
+                    width:0%;
+                }
+                to{
+                    width:100%;
+                }
+
+            }
+            @keyframes percent{
+                0%{
+                    content:"0%";
+                }
+                10%{
+                    content: "10%";
+                }
+                20%{
+                    content: "20%";
+                }
+                30%{
+                    content: "30%";
+                }
+                40%{
+                    content: "40%";
+                }
+                50%{
+                    content: "50%";
+                }
+                60%{
+                    content: "60%";
+                }
+                70%{
+                    content: "70%";
+                }
+                80%{
+                    content: "80%";
+                }
+                90%{
+                    content: "90%";
+                }
+                100%{
+                    content: "100%";
+                }
+            }
+            *{
+                transition: all ease 1s;
+            }
+            .hoverbox{
+                clear: left;
+                background-color: black;
+                color: white;
+                width: 200px;
+                height: 50px;
+                float: left;
+                padding: 5px;
+                margin: 20px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .box{
+                background-color: red;
+                color: white;
+                width: 200px;
+                height: 50px;
+                float: left;
+                padding: 5px;
+                margin: 20px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .translate-hover:hover + .translatebox{
+                transform: translate(200px, 100px);
+            }
+            .rotation-hover:hover + .rotationbox{
+                transform: rotate3d(1,1,1,45deg);
+            }
+            .scale-hover:hover + .scalebox{
+                transform: scale(2);
+            }
+            .skew-hover:hover + .skewbox{
+                transform: skew(45deg);
+            }
+            .animation-hover:hover + .animationbox{
+                /*animation-name:example;
+                animation-duration:1s;
+                animation-iteration-count:infinity;
+                animation-timing-function:ease;
+                */
+                animation: example 1s infinite ease;
+            }
+            .progress-border{
+                clear: both;
+                border: 1px solid black;
+                width: 500px;
+                height: 200px;
+            }
+            .progress{
+                background-color: green;
+                height: 100%;
+                width: 0%;
+
+            }
+            .container::after{
+                content: "0%";               
+            }
+            .progress-hover:hover + .progress-border>.progress{
+                animation-name: progressbar;
+                animation-duration:  1s;
+                animation-timing-function: ease;
+            }
+            .progress-hover:hover + .progress-border>.progress-text::after{
+                animation-name: percent;
+                animation-duration: 1s;  
+                animation-timing-function: ease;
+            }
+            .progress-text{
+                display: inline;
+                height: 0%;
+            }
+            .progress-text::after{
+                content: "0%";
+                position: relative;
+                top:50%;
+                left:50%;
+                transform: translate(-50%, -50%);
+                color: black;  
+    
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="translate-hover hoverbox" >Hover</div>
+        <div class="translatebox box">Translate</div>
+        <div class="rotation-hover hoverbox">Hover</div>
+        <div class="rotationbox box">Rotation</div>
+        <div class="scale-hover hoverbox">Hover</div>
+        <div class="scalebox box">Scale</div>
+        <div class="skew-hover hoverbox">Hover</div>
+        <div class="skewbox box">Skew</div>
+        <div class="animation-hover hoverbox">Hover</div>
+        <div class="animationbox box">Animation</div>
+        <div class="progress-hover hoverbox">Hover</div>
+        <div class="progress-border">   
+            <!--
+            <div class="progress-text"></div>
+            -->
+            <div class="container">            <div class="progress">
+                
+            </div></div>
+
+
+        </div>
+    </body>
+</html>
