@@ -1,0 +1,243 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: Helvetica, sans-serif;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 2rem;
+        }
+
+        span {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .header {
+            width: 100%;
+            background-color: white;
+            justify-content: space-between;
+            box-sizing: border-box;
+            display: flex;
+            margin-bottom: 10px;
+            position: sticky;
+            top: 0px;
+            padding: 10px;
+        }
+
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        .list>li>strong {
+            color: #f26464;
+            font-size: 50px;
+            display: block;
+        }
+
+        .list>li {
+            margin-right: 60px;
+        }
+
+        .skill>li {
+            border: 1px solid gray;
+            border-radius: 20px;
+            display: flex;
+            float: left;
+            flex-wrap: wrap;
+            padding: 10px;
+            margin: 20px;
+            font-size: 16px;
+        }
+
+        .work {
+            background-color: #f6f8fa;
+            padding: 50px;
+            margin: 20px;
+            display: flex;
+        }
+
+        .work>span {
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: black;
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+    </style>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div
+            style="background:black; width: 20px; height: 20px; padding:10px; justify-content: center; align-items: center; text-align: center;border-radius: 5px; border: 2px solid black;">
+            <span style="color:white; padding: auto; font-size: 20px;">J</span></div>
+        <div style="background-color:white">
+            <iconify-icon icon="mdi:github" style="font-size: 30px;"></iconify-icon>
+            <iconify-icon icon="mdi:stackoverflow" style="font-size: 30px;"></iconify-icon>
+            <iconify-icon icon="typcn:social-linkedin" style="font-size: 30px;"></iconify-icon>
+        </div>
+    </div>
+
+    <div class="content">
+        <img src="https://www.designstub.com/demos/defolio/assets/images/profile-image.jpg" width="600px" height="600px"
+            style="object-fit: cover;">
+
+        <div style="padding-left: 20px;">
+            <p style="font-size: 30px;"><b>HI THERE</b></p>
+            <p style="font-size: 50px;"><b>I'm Jason Stroff UI/UX DESIGNER + DEVELOPER based in Florida</b></p>
+
+            <ul class="list">
+                <li>
+                    <strong>6+</strong>
+                    <span>Experience</span>
+                </li>
+                <li>
+                    <strong>89</strong>
+                    <span>Projects</span>
+                </li>
+                <li>
+                    <strong>52</strong>
+                    <span>Happy Clients</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <span style="font-size:20px; border-bottom: 4px solid #f26464; padding-bottom: 5px;">ABOUT ME</span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum ante a porta blandit.
+        Quisque velit tortor, ultricies in quam ut, luctus convallis metus. Nunc vitae felis rutrum, mattis justo quis,
+        bibendum tellus.
+        Integer bibendum eget dolor nec venenatis. Aliquam erat volutpat. Etiam et est vitae turpis accumsan vulputate.
+        Curabitur et vehicula nisl, eu congue dolor.
+        Vivamus nec hendrerit mi Nulla consequat tempor.</p>
+    <p
+        style="padding:10px; border: 2px solid #f26464; border-radius: 25px; text-align: center; color: #f26464; margin:auto; width: 30%; margin-top: 50px; margin-bottom: 50px;">
+        DOWNLOAD RESUME</p>
+    <div style="display:flex; justify-content: space-between; align-items: flex-start;">
+        <div style="width: 50%;">
+            <span style="font-size:20px; border-bottom: 4px solid #f26464; padding-bottom: 5px;">CORE SKILL</span>
+            <ul class="skill">
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>Vue.js</li>
+                <li>React</li>
+                <li>Sequelize</li>
+                <li>Github</li>
+                <li>HTML</li>
+            </ul>
+        </div>
+
+        <div style="width: 50%;">
+            <span style="border-bottom: 4px solid #f26464; padding-bottom: 5px; ">OTHER SKILLS</span>
+            <ul class="skill">
+                <li>Storyblok</li>
+                <li>PWAs</li>
+                <li>Responsive Web Design</li>
+                <li>React</li>
+                <li>Vuetify</li>
+            </ul>
+        </div>
+    </div>
+
+    <p style="font-size:20px; clear: left;"><span style="border-bottom: 4px solid #f26464; padding-bottom: 5px; ">WORK
+            EXPERIENCE</span></p>
+    <div>
+        <h4><b>2019-Present</b></h4>
+        <h1>Matrix Media Inc</h1>
+        <h2><b>Full Stack developer</b></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim.
+            Sed fermentum.</p>
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        </ul>
+    </div>
+    <div>
+        <h4><b>2018-2019</b></h4>
+        <h1>Lexind</h1>
+        <h2><b>Senior app developer</b></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim.
+            Sed fermentum.</p>
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+        </ul>
+    </div>
+
+    <p style="font-size:20px; clear: left;"><span
+            style="border-bottom: 4px solid #f26464; padding-bottom: 5px; ">LASTEST WORKS</span></p>
+    <div class="work">
+        <div style="padding-right: 50px; margin-right:50px;">
+            <h1>Tripy mobile app</h1>
+            <p style="font-size: 20px; margin-bottom: 60px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum nulla tellus, quis efficitur mauris
+                tristique efficitur. Aliquam rhoncus sem sed ullamcorper venenatis. Aenean malesuada eu orci non
+                sodales.</p>
+            <span
+                style="padding:5px; border: 2px solid #f26464; border-radius: 20px; color: #f26464; padding: 8px;">DETAILS</span>
+        </div>
+        <img src="https://www.designstub.com/demos/defolio/assets/images/work-1.jpg"
+            style="margin-top: 30px; object-fit: cover; width: 400px; height: 400px;">
+    </div>
+    <div class="work">
+        <div style="padding-right: 50px; margin-right:50px;">
+            <h1>Hello mobile app</h1>
+            <p style="font-size: 20px; margin-bottom: 60px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum nulla tellus, quis efficitur mauris
+                tristique efficitur. Aliquam rhoncus sem sed ullamcorper venenatis. Aenean malesuada eu orci non
+                sodales.</p>
+            <span
+                style="padding:5px; border: 2px solid #f26464; border-radius: 20px; color: #f26464; padding: 8px;">DETAILS</span>
+        </div>
+        <img src="https://www.designstub.com/demos/defolio/assets/images/work-2.jpg"
+            style="margin-top: 30px; width: 400px; height: 400px; ">
+    </div>
+    <div class="work">
+        <div style="padding-right: 50px; margin-right:50px;">
+            <h1>Cute cookies app</h1>
+            <p style="font-size: 20px; margin-bottom: 60px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum nulla tellus, quis efficitur mauris
+                tristique efficitur. Aliquam rhoncus sem sed ullamcorper venenatis. Aenean malesuada eu orci non
+                sodales.</p>
+            <span
+                style="padding:5px; border: 2px solid #f26464; border-radius: 20px; color: #f26464; padding: 8px;">DETAILS</span>
+        </div>
+        <img src="https://www.designstub.com/demos/defolio/assets/images/work-3.jpg"
+            style="margin-top: 30px; width: 400px; height: 400px; ">
+    </div>
+    <div class="footer">
+        <h3 style="color: gray; text-align: center;">STAY IN TOUCH</h3>
+        <h1 style="color: white; text-align: center;">Ready to talk?</h1>
+        <h3 style="color:white; text-align: center;">Feel free to contact us</h3>
+        <p
+            style="padding:10px; border: 2px solid #f26464; border-radius: 25px; text-align: center; color: #f26464; margin:auto; width: 30%;">
+            LETS TALK</p>
+        <p style="color: gray; font-size: 16px; text-align: center;">© 2022 All rights reserved. Free minimal bootstrap
+            template by Designstub.</p>
+    </div>
+</body>
+
+</html>
