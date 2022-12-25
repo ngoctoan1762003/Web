@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="reponsive.css">
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+        <style>
+            @media (max-width: 1500px){
+                .searchicon{
+                    display: none;
+                }
+                .morebutton{
+                    display: none;
+                }
+                .smallerbutton{
+                    display: none;
+                }
+                .newheader{
+                    display: none;
+                }
+            }
+            @media (max-width: 900px){
+                .listtool{
+                    display: none;
+                }
+                .button{
+                    display: none;
+                }
+                .smallerbutton{
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+            }
+            @media (max-width: 500px){
+                .listtool{
+                    display: none;
+                }
+                .searchicon{
+                    display: block;
+                }
+                .morebutton{
+                    display: block;
+                    padding-right: 20px;
+                }
+                .smallerbutton{
+                    display: none;
+                }
+                .newheader{
+                    display: block;
+                    color: rgb(21, 21, 22);
+                    text-align: center;
+                    color: white;
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="newheader">
+            <div class="smalltrialbutton">Get free trial</div>
+        </div>
+        <div class="header">
+            <div class="searchicon">
+                <iconify-icon icon="ic:baseline-search" style="font-size: 30px;"></iconify-icon>
+            </div>
+            <div class="logo">
+                <iconify-icon icon="vscode-icons:file-type-gitlab" style="font-size: 50px;"></iconify-icon>
+                <div class="listtool">
+                    <div class="listtoolitem">Platform</div>
+                    <div class="listtoolitem">Solutions</div>
+                    <div class="listtoolitem">Pricing</div>
+                    <div class="listtoolitem">Resource</div>
+                    <div class="listtoolitem">Company</div>
+                    <div class="listtoolitem">Contact us</div>
+                </div>
+            </div>
+            <div class="button">
+                <iconify-icon icon="ic:baseline-search" style="font-size: 30px; color: gray"></iconify-icon>
+                <div class="trialbutton"><b>Get free trial</b></div>
+                <div class="loginbutton">Log in</div>
+            </div>
+            <div class="smallerbutton">
+                <div class="trialbutton"><b>Get free trial</b></div>
+                <iconify-icon icon="healthicons:ui-user-profile" style="font-size: 30px;"></iconify-icon>
+                <iconify-icon icon="ic:baseline-search" style="font-size: 30px;"></iconify-icon>
+                <iconify-icon icon="mdi:more-horiz" style="font-size: 30px;"></iconify-icon>
+            </div>
+            <div class="morebutton">
+                <iconify-icon icon="mdi:more-horiz" style="font-size: 30px;"></iconify-icon>
+            </div>
+        </div>
+
+    </body>
+</html>

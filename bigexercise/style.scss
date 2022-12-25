@@ -1,0 +1,476 @@
+
+body{
+    margin: 0;
+    background-color: white;
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+    overflow-x: hidden;
+}
+p{
+    text-align: center;
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    .bg1{
+        position: absolute;    
+        background: url('https://my-space.space/numerio/img/main-bg.svg') 50% 0 no-repeat;
+        width: 100%;
+        background-size: auto 100%;
+        height: 100%;
+    
+    }
+    .bg2{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url('https://my-space.space/numerio/img/main.svg') 50% 0 no-repeat;
+        background-size: cover;
+    }
+}
+
+@mixin flex ($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.441);
+}
+.logo{
+    margin: 20px;
+    color: #485596;
+    font-size: 20px;
+}
+.toolbar{
+    //display: flex;
+    @include flex(space-between, center);
+}
+.listtool{
+    display: flex;
+    list-style-type: none;
+}
+.listtoolitem{
+    color: #9095ad;
+    font-family: sans-serif;
+    padding: 20px;
+}
+.startbutton{
+    font-family: sans-serif;
+    margin:20px;
+    background-color: #485596;
+    border-radius: 30px;
+    padding: 15px 30px 15px 30px;
+    color: white;
+    transition: all ease 0.5s;
+}
+.startbutton:hover{
+    background-color: #fa617d;
+}
+.service{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 100px;
+
+    position: relative;
+    .text{
+        position: relative;
+        top:100px;
+        max-width: 500px;
+    }
+    .learnbutton{
+        position: absolute;
+        top: 400px;
+        padding: 20px 30px 20px 30px;
+        color:white;
+        font-family: sans-serif;
+        border-radius: 50px;
+        background-color: #fa617d;
+    }
+    .servicebox{
+        position: absolute;
+        top: 530px;
+        display: flex;
+        width: 100%;
+        height: 800px;
+        gap: 30px;
+        .servicecard{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            width: calc((100% - 10px*3)/4);
+            height: 350px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            .round{
+                position: absolute;
+                top: -30%;
+                left: 10%;
+                background-color: #f4f5fb;
+                width: calc(80%);
+                height: 200px;
+                border-radius: 100%;
+                .innerround{
+                    position: absolute;
+                    top: -20%;
+                    left: 15%;
+                    background-color: white;
+                    width: calc(70%);
+                    height: 200px;
+                    border-radius: 100%;
+                }
+            }
+            .serviceicon{
+                position: relative;
+                width: 100%;
+                top: 70px;
+                .serviceimg{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            
+        }
+    }
+}
+.about{
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+    top: 700px;
+    .history{
+        display: flex;
+        width: 100%;
+        height: auto;
+        .historytext{
+            margin-top: 80px;
+            margin-left: 150px;
+            p{
+                text-align: left;
+            }
+            .aboutvideo{
+                margin-top: 20px;
+                display: flex;
+                .aboutvideobutton{
+                    background-color: #fbe3e6;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 100%;
+                    .bgbutton{
+                        margin-left: 15px;
+                        margin-top: 15px;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 100%;
+                        background-color: #fa617d;
+                    }
+                }
+                .videotext{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    .stat{
+        display: flex;
+        margin-top: 130px;
+        gap: calc((100% - 200px*4)/3);
+        .box{
+            position: relative;
+            display: flex;
+            width: 250px;
+            height: 250px;
+            align-items: center;
+            justify-content: center;
+            p{
+                position: absolute;
+            }
+            .round{
+                position: absolute;
+                top: -30%;
+                left: 10%;
+                background-color: #f4f5fb;
+                width: 150px;
+                height: 150px;
+                border-radius: 100%;
+                .innerround{
+                    
+                    position: absolute;
+                    top: 23%;
+                    left: 23%;
+                    background-color: white;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+    .whatwedo{
+        padding: 30px;
+        position: relative;
+        margin-top: -100px;
+        .decor{
+            margin-top: -20px;
+            p{
+                text-align: center;
+                font-size: 50px;
+                font-weight: 500;
+                color: #1b2b7c;
+                margin-bottom: -5px;
+            }
+        }
+        .servicebox{
+            position: absolute;
+            top: 250px;
+            flex-wrap: wrap;
+            display: flex;
+            
+            width: 100%;
+            height: 200px;
+            gap: 30px;
+            .servicecard2{
+                box-shadow: 0 4px 20px 0 rgba(154, 172, 203, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                width: calc((100% - 30px*2 - 60px)/3);
+                height: 230px;
+                background-color: white;
+                border-radius: 10px;
+                overflow: hidden;
+                position: relative;
+                .round{
+                    position: absolute;
+                    top: -40%;
+                    left: -20%;
+                    background-color: #f4f5fb;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 100%;
+                    z-index: 0;
+                    .innerround{
+                        position: absolute;
+                        top: 30%;
+                        left: 25%;
+                        background-color: white;
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 100%;
+                    }
+                }
+                .serviceicon{
+                    display: flex;
+                    
+                    position: relative;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    width: 100%;
+                    top:20px;
+                }
+                
+            }
+        }
+        .decor::before{
+            content: '';
+            background: url('https://my-space.space/numerio/img/leaf-left.svg');
+            width: 70px;
+            height: 69px;
+            position: absolute;
+        }
+        .decor::after{
+            left: 90%;
+            top: 6%;
+            width: 88px;
+            height: 56px;
+            content: '';
+            background: url('https://my-space.space/numerio/img/leaf-right.svg');
+            position: absolute;
+        }
+        .getstarted{
+            width: 105%;
+            height: auto;
+            .bgstart{
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                
+                top: 650px;
+                z-index: -1;
+                .bg1{
+                    position: absolute;  
+                    top:-180px;
+                    left:-380px;  
+                    background: url('https://my-space.space/numerio/img/bg/bg-2.svg') 50% 0 no-repeat;
+                    width: 150%;
+                    background-size: auto 100%;
+                    height: 150%;
+                }
+                .bg2{
+                    position: absolute;    
+                    background: url('https://my-space.space/numerio/img/consultation.svg') 50% 0 no-repeat;
+                    width: 130%;
+                    background-size: auto 100%;
+                    height: 130%;
+                    left: 5%;
+                }
+            }
+            .textbox{
+                position: relative;
+                top: 100px;
+                max-width: 450px;
+                p{
+                    text-align: left;
+                }
+                .text{
+                    margin-top: -50px;
+                }
+            }
+            .inputboxgroup{
+                position: relative;
+                top: 120px;
+                max-width: 450px;
+                display: flex;
+                flex-wrap: wrap;
+                
+                gap: 20px;
+                height: 100px;
+                .inputbox{
+                    width: calc((100% - 25px)/2);
+                    height: 50px;
+                    border: 1px solid #9095ad67;
+                    border-radius: 80px;
+                }
+            }
+            .submitbutton{
+                position: relative;
+                background-color: #fa617d;
+                width: 120px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                color: white;
+                border-radius: 80px;
+                margin-right: 20px;
+                font-family: 'Montserrat';
+                font-size: 14px;
+                font-weight: 500;
+                box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.441);
+            }
+            .cardbox{
+                position: relative;
+                display: flex;
+                gap: 40px;
+                width: 100%;
+                top: 180px;
+                .card{
+                    width: calc((100% - 40px*4 - 60px)/5);
+                    height: calc((100vw - 40px*4 - 60px)/5);
+                    background-color: white;
+                    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.441);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 80%;
+                        height: 80%;
+                        top: 10%;
+                        left: 10%;
+                    }
+                }
+            }
+        }
+    }
+}
+.step{
+    padding: 30px;
+    position: relative;
+    margin-top: 900px;
+    .decor{
+        margin-top: -40px;
+        p{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 500;
+            color: #1b2b7c;
+            margin-bottom: -5px;
+        }
+    }
+    .decor::before{
+        content: '';
+        background: url('https://my-space.space/numerio/img/leaf-left.svg');
+        width: 70px;
+        height: 69px;
+        position: absolute;
+    }
+    .stepboxgroup{
+        position: relative;
+        width: 100%;
+        top: 50px;
+        gap: 30px;
+        display: flex;
+        .stepbox{
+            width: calc((100% - 30px*3)/4);
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            .index{
+                z-index: -1;
+                top: -160px;
+                position: absolute;
+                color: #eef0f8;
+                font-size: 150px;
+                font-weight: 900;
+                font-family: 'Roboto Slab';
+            }
+            .iconbox{
+                img{
+                    transform: translateX(20%);
+                }
+            }
+        }
+    }
+}
+.price{
+    position: relative;
+    margin-top: 60px;
+    .decor{
+        margin-top: -40px;
+        p{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 500;
+            color: #1b2b7c;
+            margin-bottom: -5px;
+        }
+    }
+    .decor::after{
+        left: 80%;
+        top: 6%;
+        width: 88px;
+        height: 56px;
+        content: '';
+        background: url('https://my-space.space/numerio/img/leaf-right.svg');
+        position: absolute;
+    }
+}
+.servicecard:nth-child(even){
+    transform: translateY(-60px);
+}
+.servicecard2:nth-child(2){
+    transform: translateY(40px);
+}
+.servicecard2:nth-child(5){
+    transform: translateY(40px);
+}
+.card:nth-child(even){
+    transform: translateY(-40px);
+}
