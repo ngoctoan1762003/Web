@@ -4,11 +4,24 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
         <style>
             @media (max-width: 1800px){
-                
+                #successtext{
+                    font-size: 60px; 
+                }
+            }
+            @media (max-width: 1100px){
+                #successtext{
+                    font-size: 50px; 
+                }
+            }
+            @media  (max-width: 1000px){
+                #successtext{
+                    font-size: 40px;
+                }
             }
             @media (max-width: 900px){
                 .listtool{
@@ -23,12 +36,11 @@
             <div class="bg2"></div>
         </div>
         <div class="header">
-            <div class="logo">
-                <b>NumeRIO</b>
-            </div>
+            <img src="https://my-space.space/numerio/img/logo.svg" style="width: 110px;">
+
             <div class="toolbar">
                 <div class="listtool">
-                    <li class="listtoolitem">Service</li>
+                    <li class="listtoolitem">Services</li>
                     <li class="listtoolitem">About</li>
                     <li class="listtoolitem">Steps</li>
                     <li class="listtoolitem">Price</li>
@@ -40,9 +52,11 @@
         </div>
         <div class="service">
             <div class="text">
-                <p style="color: #fa617d; font-family: sans-serif; font-size: 14px; text-align: left;">BE SURE</p>
-                <p style="font-size: 60px; color: #485596; margin: 10px; text-align: left;"><b>Your Success Is <br>In Our Hands</b></p>
-                <p style="color: gray; font-family: sans-serif; font-size: 22px; color: #424348; text-align: left;">Agency with 12 years of history, 15 employees, Fortune 5000 clients and proven results.</p>
+                <div style="display: flex; align-items: center; gap: 10px;" class="headingtext">
+                    <p style="color: #fa617d; font-family: sans-serif; font-size: 13px; text-align: left; font-weight: 600;">BE SURE</p>
+                </div>
+                <p style="color: #1b2b7c; margin: 10px; margin-left: 0; text-align: left; line-height: 100%;" id="successtext"><b>Your Success Is <br>In Our Hands</b></p>
+                <p style="color: #646A98; font-family: sans-serif; font-size: 21px; color: #424348; text-align: left;" id="agencytext">Agency with 12 years of history, 15 employees, Fortune 5000 clients and proven results.</p>
             </div>
             <p class="learnbutton"><b>Learn More</b></p>
             <div class="servicebox">    
@@ -290,7 +304,185 @@
             <p style="color:#fa617d; font-size:14px; font-family:  'Montserrat', sans-serif; font-weight: 600;">PRICES</p>
             <div class="decor">
                 <p>Discover Our Price - List</p>
-                <p style="color:#768cb3; font-size:18px; font-family: 'Montserrat', sans-serif; font-weight: 500;">Dolor duis voluptate enim exercitation consequat ex.</p>
+                <p style="color:#768cb3; font-size:19px; font-family: 'Montserrat', sans-serif; font-weight: 500;">Dolor duis voluptate enim exercitation consequat ex.</p>
+            </div>
+            <div class="pricepackbox">
+                <div class="servicebox">    
+                    <div class="pricecard">
+                        <div class="round">
+                            
+                        </div>
+                        <p style="color:#fa617d; font-size:17px; font-family:  'Montserrat', sans-serif; font-weight: 600; margin-top: 50px;">SIMPLE</p>
+                        <p style="color: #1b2b7c; font-size: 24px; font-weight: 600; margin-top: -10px;">Basic Plan</p>
+                        <div class="pricetext">
+                            <p style="color: #6c728f; font-size: 20px; font-weight: 600; margin-top: 0px; font-family: 'Montserrat'; margin-right: 10px;">$</p>    
+                            <p style="color: #1b2b7c; font-size: 55px; font-weight: 600; margin-top: -10px; font-family: 'Montserrat';">69</p>
+                            <p style="color: #6c728f; font-size: 20px; font-weight: 600; margin-top: 0px; font-family: 'Montserrat'; margin-left: 10px;">.95</p>
+                        </div>
+                        <p style="color: #6c728f; font-size: 15px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">/Per month</p>
+                        <div class="detailpack">
+                            <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">Monthly Progres Report</p>
+                            <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">Ad Campaign Management</p>
+                            <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">Business Page Optimization</p>
+                            <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">Copywriter & Visual Design</p>
+                        </div>
+                        <div class="buybutton">
+                            Buy Now
+                        </div>
+                    </div>
+                    <div class="pricecard" style="height: 650px; transform: translateY(-75px);">
+                        <div class="round" style="margin-top: 45px;">
+                            
+                        </div>
+                        <p style="color:#fa617d; font-size:17px; font-family:  'Montserrat', sans-serif; font-weight: 600; margin-top: 40px;">MEDIUM</p>
+                        <p style="color: #1b2b7c; font-size: 24px; font-weight: 600; margin-top: -10px;">Standard Plan</p>
+                        <div class="pricetext">
+                            <p style="color: #6c728f; font-size: 20px; font-weight: 600; margin-top: 0px; font-family: 'Montserrat'; margin-right: 10px;">$</p>    
+                            <p style="color: #1b2b7c; font-size: 55px; font-weight: 600; margin-top: -10px; font-family: 'Montserrat';">89</p>
+                            <p style="color: #6c728f; font-size: 20px; font-weight: 600; margin-top: 0px; font-family: 'Montserrat'; margin-left: 10px;">.95</p>
+                        </div>
+                        <p style="color: #6c728f; font-size: 15px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">/Per month</p>
+                        <div class="detailpack" style="margin-top: 150px;">
+                            <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">Basic Plan</p>
+                            <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">Ad Campaign Management</p>
+                            <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">Business Page Optimization</p>
+                            <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">Copywriter & Visual Design</p>
+                            <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">Monthly Progress Report</p>
+                            <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">Social Media Listening</p>
+                        </div>
+                        <div class="buybutton">
+                            Buy Now
+                        </div>
+                    </div>
+                    <div class="pricecard">
+                        <div class="round">
+                            
+                        </div>
+                        <p style="color:#fa617d; font-size:17px; font-family:  'Montserrat', sans-serif; font-weight: 600;">EXTENDED</p>
+                        <p style="color: #1b2b7c; font-size: 24px; font-weight: 600; margin-top: -10px;">Power Plan</p>
+                        <div class="pricetext">
+                            <p style="color: #6c728f; font-size: 20px; font-weight: 600; margin-top: 0px; font-family: 'Montserrat'; margin-right: 10px;">$</p>    
+                            <p style="color: #1b2b7c; font-size: 55px; font-weight: 600; margin-top: -10px; font-family: 'Montserrat';">99</p>
+                            <p style="color: #6c728f; font-size: 20px; font-weight: 600; margin-top: 0px; font-family: 'Montserrat'; margin-left: 10px;">.95</p>
+                        </div>
+                        <p style="color: #6c728f; font-size: 15px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">/Per month</p>
+                        <div class="detailpack" style="margin-top: 150px;">
+                            <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">Monthly Progress Report</p>
+                            <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">Ad Campaign Management</p>
+                            <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">Business Page Optimization</p>
+                            <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: -80px; font-family: 'Montserrat'; font-weight: 500;">Copywriter & Visual Design</p>
+                        </div>
+                        <div class="buybutton">
+                            Buy Now
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newsletter">
+                <div class="bg">
+                    <div class="newsbg1">
+                        <img src="https://my-space.space/numerio/img/bg/bg-3.svg">
+                    </div>
+                    <div class="newsbg2">
+                        <img src="https://my-space.space/numerio/img/newsletter.svg">
+                    </div>
+                </div>
+                <div class="content">
+                    <p style="color: #1b2b7c; font-size: 35px; font-weight: 600; text-align: left;">Newsletter</p>
+                    <p style="color: #6c728f; font-size: 13px; font-family: 'Montserrat'; margin-top: -30px; font-weight: 500; text-align: left; line-height: 200%;">Pariatur magna cupidatat magna sit incididunt non pariatur. Sint nulla commodo qui magna eiusmod quis aliqua laboris officia excepteur non eu in.</p>
+                    <div style="display: flex; margin-top: 20px;">
+                        <div class="inputbox"></div>
+                        <div class="subcribebutton">Subcribe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="https://my-space.space/numerio/img/testimonials.svg">
+            <div class="textbox">
+                <p style="color:#fa617d; font-size:14px; font-family:  'Montserrat', sans-serif; font-weight: 600;">THEY SAY</p>
+                <p style="color: #1b2b7c; font-size: 40px; font-weight: 600; text-align: left; margin-top: -10px;">Testimonials</p>
+                <p style="color: #646A89; font-family:  'Palanquin', sans-serif; font-size: 200px; position: absolute; transform: translateX(10px) translateY(-320px);">"</p>
+                <p style="color: #6c728f; font-size: 18px; font-family: 'Montserrat'; margin-top: 100px; font-weight: 500; text-align: left; line-height: 200%;">"Dolor duis voluptate enim exercitation consequat ex. Voluptate in sunt commodo aute do. Dolor enim dolor labore velit nulla sit exercitation"</p>
+                <div class="coord">
+                    <div class="image">
+                        <img src="https://my-space.space/numerio/img/examples/avatar_1.jpg">
+                    </div>
+                    <div class="infor">
+                        <p style="color: #1b2b7c; font-size: 14px; font-weight: 600; text-align: left; margin-top: -10px; font-family: 'Montserrat';">KATHRYN MURPHY</p>
+                        <p style="color: #6c728f; font-size: 14px; font-weight: 600; text-align: left; margin-top: -10px; font-family: 'Montserrat';">Marketing Coord</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog">
+            <p style="color:#fa617d; font-size:14px; font-family:  'Montserrat', sans-serif; font-weight: 600;">NEWS</p>
+            <div class="decor">
+                <p style="color: #1b2b7c; font-size: 40px; font-weight: 600; margin-top: -10px;">Read Our Blog</p>
+                <p style="color:#768cb3; font-size:19px; font-family: 'Montserrat', sans-serif; font-weight: 500; margin-top: -30px;">Dolor duis voluptate enim exercitation consequat ex.</p>
+            </div>
+            
+            <div style="display: flex; justify-content: center;">
+                <p class="viewbutton">View All</p>
+            </div>
+            
+            <div class="blogboxgroup">
+                <div class="blogbox">
+                    <img src="https://my-space.space/numerio/img/examples/news_1.jpg" style="object-fit: cover; height: 60%; width: 100%"> 
+                    <div class="under">
+                        <div class="infor">
+                            <p style="font-size: 11px; font-family: 'Montserrat'; color: #424348; font-weight: 500;">Jun 25, 2021</p>
+                            <iconify-icon icon="material-symbols:circle-outline" style="color: #fa617d; font-size: 6px;"></iconify-icon>
+                            <img src="https://my-space.space/numerio/img/examples/avatar_2.jpg" style="width: 20px;">
+                            <p style="font-size: 11px; font-family: 'Montserrat'; color: #424348; font-weight: 500;">Annette Black</p>
+                            <iconify-icon icon="material-symbols:circle-outline" style="color: #fa617d; font-size: 6px;"></iconify-icon>
+                            <p style="font-size: 11px; font-family: 'Montserrat'; color: #424348; font-weight: 500;">Community</p>
+                        </div>
+                        <div style="border-bottom: 1px solid #c4c7ce; margin-right: 30px;"></div>
+                        <p style="color: #1b2b7c; font-size: 18px;font-weight: 600; text-align: left; margin-right: 30px;">Dolor Duis Voluptate Enim Exercitation Consequat Ex. Voluptate In Sunt</p>
+                    </div>
+                </div>
+                <div class="blogbox">
+                    <img src="https://my-space.space/numerio/img/examples/news_2.jpg" style="object-fit: cover; height: 60%; width: 100%"> 
+                    <div class="under">
+                        <div class="infor">
+                            <p style="font-size: 11px; font-family: 'Montserrat'; color: #424348; font-weight: 500;">Jun 25, 2021</p>
+                            <iconify-icon icon="material-symbols:circle-outline" style="color: #fa617d; font-size: 6px;"></iconify-icon>
+                            <img src="https://my-space.space/numerio/img/examples/avatar_3.jpg" style="width: 20px;">
+                            <p style="font-size: 11px; font-family: 'Montserrat'; color: #424348; font-weight: 500;">Dianne Russell</p>
+                            <iconify-icon icon="material-symbols:circle-outline" style="color: #fa617d; font-size: 6px;"></iconify-icon>
+                            <p style="font-size: 11px; font-family: 'Montserrat'; color: #424348; font-weight: 500;">Community</p>
+                        </div>
+                        <div style="border-bottom: 1px solid #c4c7ce; margin-right: 30px;"></div>
+                        <p style="color: #1b2b7c; font-size: 18px;font-weight: 600; text-align: left; margin-right: 30px;">Dolor Duis Voluptate Enim Exercitation Consequat Ex. Voluptate In Sunt</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="bg"></div>
+            <div class="firstbar">
+                <img src="https://my-space.space/numerio/img/logo.svg" style="width: 110px;">
+                <div class="contactlink"><span style="font-size: 13px; font-family: 'Montserrat'; color: #424348; font-weight: 500;">Find us here: </span><span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 13px;font-weight: 600;">Fb </span><span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 13px;font-weight: 600;">Ins </span><span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 13px;font-weight: 600;">In </span></div>
+                <div>
+                    <span style="font-size: 13px; font-family: 'Montserrat'; color: #424348; font-weight: 500;">Have a question? Call us!</span>
+                    <iconify-icon icon="carbon:phone" style="color: #fa617d; margin-left: 20px;"></iconify-icon>
+                    <span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 14px;font-weight: 600;"> +1 546 987 21 85</span>
+                </div>
+                <div class="startbutton">Get Started</div>
+            </div>
+            <div style="border-bottom: 1px solid #c4c7ce"></div>
+            <div class="secondbar">
+                <div style="font-size: 12px; color:#6c728f; width: 20%;">All rights reserved. Numerio 2021</div>
+                <div class="listtool">
+                    <li class="listtoolitem">Services</li>
+                    <li class="listtoolitem">About</li>
+                    <li class="listtoolitem">Steps</li>
+                    <li class="listtoolitem">Price</li>
+                    <li class="listtoolitem">Testimonials</li>
+                    <li class="listtoolitem">Blog</li>
+                </div>
             </div>
         </div>
     </body>

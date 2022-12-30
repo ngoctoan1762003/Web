@@ -12,6 +12,7 @@ p {
 
 .bg {
   position: absolute;
+  margin-top: -20px;
   width: 100%;
   height: 100vh;
 }
@@ -32,7 +33,8 @@ p {
 
 .header {
   width: 100%;
-  height: 100px;
+  height: 80px;
+  padding-left: 20px;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -50,6 +52,7 @@ p {
 }
 
 .toolbar {
+  margin-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,16 +67,24 @@ p {
   color: #9095ad;
   font-family: sans-serif;
   padding: 20px;
+  font-size: 14px;
 }
 
 .startbutton {
   font-family: sans-serif;
-  margin: 20px;
-  background-color: #485596;
+  margin: 25px;
+  height: 40px;
+  background-color: #1B2B7C;
   border-radius: 30px;
-  padding: 15px 30px 15px 30px;
+  width: 120px;
   color: white;
   transition: all ease 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 200;
+  box-shadow: 0px 10px 10px #E6E7F0;
 }
 
 .startbutton:hover {
@@ -89,7 +100,21 @@ p {
 .service .text {
   position: relative;
   top: 100px;
-  max-width: 500px;
+  max-width: 42vw;
+}
+.service .text .headingtext p {
+  padding-left: 20px;
+}
+.service .text .headingtext p::before {
+  content: "";
+  display: block;
+  width: 0.3rem;
+  height: 0.3rem;
+  left: 0;
+  top: 1.1rem;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #FB5472;
 }
 .service .learnbutton {
   position: absolute;
@@ -99,6 +124,7 @@ p {
   font-family: sans-serif;
   border-radius: 50px;
   background-color: #fa617d;
+  box-shadow: 0px 10px 20px #ffcbd5;
 }
 .service .servicebox {
   position: absolute;
@@ -457,6 +483,230 @@ p {
   content: "";
   background: url("https://my-space.space/numerio/img/leaf-right.svg");
   position: absolute;
+}
+.price .pricepackbox {
+  width: 100%;
+}
+.price .pricepackbox .servicebox {
+  position: relative;
+  top: 100px;
+  display: flex;
+  width: 100%;
+  height: 800px;
+  gap: 30px;
+  padding: 60px;
+}
+.price .pricepackbox .servicebox .pricecard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: calc((100% - 180px) / 3);
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: -2;
+}
+.price .pricepackbox .servicebox .pricecard .round {
+  position: absolute;
+  top: -30%;
+  left: -5%;
+  background-color: #f4f5fb;
+  width: 110%;
+  height: 400px;
+  border-radius: 100%;
+  z-index: -1;
+}
+.price .pricepackbox .servicebox .pricecard .pricetext {
+  margin-left: 5%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.price .pricepackbox .servicebox .pricecard .detailpack {
+  margin-top: 120px;
+}
+.price .pricepackbox .servicebox .pricecard .detailpack p {
+  margin-bottom: 50px;
+}
+.price .pricepackbox .servicebox .pricecard .buybutton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: #1b2b7c;
+  background-color: #f4f5fb;
+  border-radius: 80px;
+  box-shadow: 0px 20px 10px rgba(225, 228, 246, 0.6352941176);
+}
+.price .newsletter {
+  position: relative;
+  width: 100%;
+}
+.price .newsletter .bg {
+  z-index: -3;
+  width: 100%;
+  margin-top: -300px;
+}
+.price .newsletter .bg .newsbg1 {
+  position: absolute;
+}
+.price .newsletter .bg .newsbg2 {
+  position: absolute;
+  transform: scale(0.9);
+  left: 55%;
+  top: 27%;
+}
+.price .newsletter .content {
+  position: relative;
+  width: 55%;
+  margin-left: 40px;
+  transform: translateY(-60px);
+}
+.price .newsletter .content .inputbox {
+  position: relative;
+  width: 70%;
+  height: 50px;
+  border: 1px solid rgba(144, 149, 173, 0.4039215686);
+  border-radius: 80px;
+}
+.price .newsletter .content .subcribebutton {
+  background-color: #fa617d;
+  font-family: "Montserrat";
+  font-weight: 600;
+  margin-left: 20px;
+  width: 25%;
+  border-radius: 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial {
+  width: 100%;
+  display: flex;
+  margin-top: 250px;
+}
+.testimonial img {
+  width: 50%;
+}
+.testimonial .textbox {
+  margin-left: 160px;
+  margin-top: 100px;
+  padding-right: 40px;
+}
+.testimonial .textbox .coord {
+  width: 100%;
+  display: flex;
+}
+.testimonial .textbox .coord .image img {
+  width: 70px;
+}
+.testimonial .textbox .coord .infor {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.testimonial p {
+  text-align: left;
+}
+
+.blog {
+  position: relative;
+  top: 100px;
+}
+.blog .viewbutton {
+  background-color: #fa617d;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  width: 120px;
+  height: 50px;
+  border-radius: 80px;
+  color: white;
+  line-height: 50px;
+}
+.blog .blogboxgroup {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  margin-left: 60px;
+  margin-top: 60px;
+}
+.blog .blogboxgroup .blogbox {
+  width: calc((100% - 90px) / 2);
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+}
+.blog .blogboxgroup .blogbox .under {
+  padding-left: 30px;
+}
+.blog .blogboxgroup .blogbox .under .infor {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer {
+  position: relative;
+}
+.footer .bg {
+  position: absolute;
+  top: -300px;
+  z-index: -4;
+  background: url("https://my-space.space/numerio/img/bg/footer-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 465px;
+}
+.footer .firstbar {
+  padding-left: 60px;
+  padding-right: 60px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 180px;
+}
+.footer .firstbar .startbutton {
+  width: 80px;
+  height: 15px;
+  background-color: #1b2b7c;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+.footer .secondbar {
+  padding-left: 60px;
+  padding-right: 90px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .secondbar .listtool {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  transform: translateX(-125px);
+}
+.footer .secondbar .listtool .listtoolitem {
+  color: #9095ad;
+  font-family: sans-serif;
+  padding: 20px;
+  font-size: 14px;
 }
 
 .servicecard:nth-child(even) {
