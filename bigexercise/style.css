@@ -19,15 +19,12 @@ p {
 .bg .bg1 {
   position: absolute;
   background: url("https://my-space.space/numerio/img/main-bg.svg") 50% 0 no-repeat;
-  width: 100%;
-  background-size: auto 100%;
-  height: 100%;
 }
 .bg .bg2 {
   position: absolute;
+  background: url("https://my-space.space/numerio/img/main.svg") 50% 0 no-repeat;
   width: 100%;
   height: 100%;
-  background: url("https://my-space.space/numerio/img/main.svg") 50% 0 no-repeat;
   background-size: cover;
 }
 
@@ -100,7 +97,6 @@ p {
 .service .text {
   position: relative;
   top: 100px;
-  max-width: 42vw;
 }
 .service .text .headingtext p {
   padding-left: 20px;
@@ -108,8 +104,8 @@ p {
 .service .text .headingtext p::before {
   content: "";
   display: block;
-  width: 0.3rem;
-  height: 0.3rem;
+  width: 0.2rem;
+  height: 0.2rem;
   left: 0;
   top: 1.1rem;
   position: absolute;
@@ -117,8 +113,9 @@ p {
   border: 2px solid #FB5472;
 }
 .service .learnbutton {
-  position: absolute;
-  top: 400px;
+  width: 100px;
+  position: relative;
+  top: 120px;
   padding: 20px 30px 20px 30px;
   color: white;
   font-family: sans-serif;
@@ -127,8 +124,8 @@ p {
   box-shadow: 0px 10px 20px #ffcbd5;
 }
 .service .servicebox {
-  position: absolute;
-  top: 530px;
+  position: relative;
+  top: 150px;
   display: flex;
   width: 100%;
   height: 800px;
@@ -136,8 +133,7 @@ p {
 }
 .service .servicebox .servicecard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: calc((100% - 30px) / 4);
-  height: 350px;
+  height: 300px;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -145,20 +141,18 @@ p {
 }
 .service .servicebox .servicecard .round {
   position: absolute;
-  top: -30%;
-  left: 10%;
+  transform: translateX(13%) translateY(-40%);
   background-color: #f4f5fb;
   width: 80%;
-  height: 200px;
+  aspect-ratio: 1/1;
   border-radius: 100%;
 }
 .service .servicebox .servicecard .round .innerround {
   position: absolute;
-  top: -20%;
-  left: 15%;
+  transform: translateX(33%) translateY(30%);
   background-color: white;
-  width: 70%;
-  height: 200px;
+  width: 60%;
+  aspect-ratio: 1/1;
   border-radius: 100%;
 }
 .service .servicebox .servicecard .serviceicon {
@@ -176,16 +170,18 @@ p {
   position: relative;
   margin-left: 30px;
   margin-right: 30px;
-  top: 700px;
+  top: -100px;
 }
 .about .history {
   display: flex;
   width: 100%;
   height: auto;
+  justify-content: space-between;
 }
 .about .history .historytext {
   margin-top: 80px;
-  margin-left: 150px;
+  width: 450px;
+  min-width: 450px;
 }
 .about .history .historytext p {
   text-align: left;
@@ -261,18 +257,17 @@ p {
   margin-bottom: -5px;
 }
 .about .whatwedo .servicebox {
-  position: absolute;
-  top: 250px;
+  position: relative;
+  top: 100px;
   flex-wrap: wrap;
   display: flex;
   width: 100%;
-  height: 200px;
+  height: auto;
   gap: 30px;
 }
 .about .whatwedo .servicebox .servicecard2 {
   box-shadow: 0 4px 20px 0 rgba(154, 172, 203, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: calc((100% - 60px - 60px) / 3);
-  height: 230px;
+  height: auto;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -280,8 +275,7 @@ p {
 }
 .about .whatwedo .servicebox .servicecard2 .round {
   position: absolute;
-  top: -40%;
-  left: -20%;
+  transform: translateX(-70px) translateY(-70px);
   background-color: #f4f5fb;
   width: 200px;
   height: 200px;
@@ -290,14 +284,14 @@ p {
 }
 .about .whatwedo .servicebox .servicecard2 .round .innerround {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 25%;
   background-color: white;
   width: 100px;
   height: 100px;
   border-radius: 100%;
 }
-.about .whatwedo .servicebox .servicecard2 .serviceicon {
+.about .whatwedo .servicebox .servicecard2 .serviceicon2 {
   display: flex;
   position: relative;
   padding-left: 20px;
@@ -322,8 +316,9 @@ p {
   position: absolute;
 }
 .about .whatwedo .getstarted {
-  width: 105%;
+  width: 100vw;
   height: auto;
+  margin-top: -450px;
 }
 .about .whatwedo .getstarted .bgstart {
   position: relative;
@@ -335,7 +330,6 @@ p {
 .about .whatwedo .getstarted .bgstart .bg1 {
   position: absolute;
   top: -180px;
-  left: -380px;
   background: url("https://my-space.space/numerio/img/bg/bg-2.svg") 50% 0 no-repeat;
   width: 150%;
   background-size: auto 100%;
@@ -357,20 +351,19 @@ p {
 .about .whatwedo .getstarted .textbox p {
   text-align: left;
 }
-.about .whatwedo .getstarted .textbox .text {
+.about .whatwedo .getstarted .textbox .submittext {
   margin-top: -50px;
 }
 .about .whatwedo .getstarted .inputboxgroup {
   position: relative;
   top: 120px;
-  max-width: 450px;
+  width: 450px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   height: 100px;
 }
 .about .whatwedo .getstarted .inputboxgroup .inputbox {
-  width: calc((100% - 25px) / 2);
   height: 50px;
   border: 1px solid rgba(144, 149, 173, 0.4039215686);
   border-radius: 80px;
@@ -388,18 +381,17 @@ p {
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 500;
-  box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.441);
+  box-shadow: 0px 10px 10px #ffcbd5;
 }
 .about .whatwedo .getstarted .cardbox {
   position: relative;
+  justify-content: center;
   display: flex;
-  gap: 40px;
+  gap: 30px;
   width: 100%;
   top: 180px;
 }
 .about .whatwedo .getstarted .cardbox .card {
-  width: calc((100% - 160px - 60px) / 5);
-  height: calc((100vw - 160px - 60px) / 5);
   background-color: white;
   box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.441);
   display: flex;
@@ -416,7 +408,7 @@ p {
 .step {
   padding: 30px;
   position: relative;
-  margin-top: 900px;
+  margin-top: 150px;
 }
 .step .decor {
   margin-top: -40px;
@@ -586,6 +578,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0px 10px 20px #ffcbd5;
 }
 
 .testimonial {
@@ -624,6 +617,7 @@ p {
   background-color: #fa617d;
   font-family: "Montserrat";
   font-weight: 600;
+  box-shadow: 0px 10px 10px #ffcbd5;
   font-size: 14px;
   width: 120px;
   height: 50px;
@@ -633,7 +627,7 @@ p {
 }
 .blog .blogboxgroup {
   display: flex;
-  width: 100%;
+  width: calc(100% - 60px);
   gap: 30px;
   margin-left: 60px;
   margin-top: 60px;
@@ -666,7 +660,7 @@ p {
   background: url("https://my-space.space/numerio/img/bg/footer-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 465px;
+  height: 450px;
 }
 .footer .firstbar {
   padding-left: 60px;
@@ -676,10 +670,14 @@ p {
   justify-content: space-between;
   align-items: center;
   margin-top: 180px;
+  margin-bottom: 20px;
 }
-.footer .firstbar .startbutton {
-  width: 80px;
-  height: 15px;
+.footer .firstbar .startbutton2 {
+  width: 130px;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 14px;
+  height: 45px;
   background-color: #1b2b7c;
   border-radius: 80px;
   display: flex;
@@ -687,6 +685,7 @@ p {
   align-items: center;
   font-weight: 600;
   font-size: 14px;
+  box-shadow: 0px 10px 10px #c5c7e1;
 }
 .footer .secondbar {
   padding-left: 60px;
