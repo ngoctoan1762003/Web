@@ -57,7 +57,79 @@
                     height: calc((100vw - 40px*4 - 60px)/5);
                 }
                 .inputbox{
-                    width: calc((100% - 25px)/2);
+                    width: calc((100% - 80px)/2);
+                }
+                .stepbox{
+                    width: calc((100% - 30px*3)/4);
+                }
+                #milestonedetailtext{
+                    padding-left: 25%; 
+                    padding-right: 20%; 
+                }
+                #aboutimg{
+                    width: calc(50%);
+                }
+                .pricecard{
+                    width: calc((100% - 30px*6)/3);
+                    height: 500px;
+                }
+                .pricecard:nth-child(2){
+                    height: 650px; 
+                    transform: translateY(-75px);
+                }
+                .pricecard .round{
+                    margin-top: 45px;
+                }
+                .textcontent{
+                    width: 55%;
+                }
+                .content{ 
+                    margin-left: 40px;
+                }
+                #testimonialtext{
+                    font-size: 40px; 
+                }
+                #bigchar{
+                    color: #646A89; 
+                    font-family:  'Palanquin', sans-serif; 
+                    position: absolute; 
+                    font-size: 180px; 
+                    transform: translateX(10px) translateY(-300px);
+                }
+                .blogboxgroup{
+                    margin-left: 60px;
+                    margin-top: 60px;
+                    width: calc(100% - 60px);
+                }
+                .blogbox{
+                    width: calc((100% - 90px)/2);
+                }
+                .firstbarres1{
+                    display: none;
+                }
+                .secondbarres1{
+                    display: none;
+                }
+                .firstbar{
+                    display: flex;
+                }
+                .secondbar{
+                    display: flex;
+                }
+                .firstbarres1{
+                    display: none;
+                }
+                .firstbarres2{
+                    display: none;
+                }
+                .secondbarres2{
+                    display: none;
+                }
+                .footer .bg{
+                    height: 450px;
+                }
+                .footer .bgres{
+                    display: none;
                 }
             }
             @media (max-width: 1200px){
@@ -87,6 +159,16 @@
                 .historytext{
                     transform: translateX(-80px);
                 }
+                .service .servicebox{
+                    margin-left: 0px;
+                    margin-right: -30px;
+                }
+                .pricecard{
+                    width: calc((100% - 30px*2 - 60px)/3);
+                }
+                .price .servicebox{
+                    margin-left: -30px;
+                }
             }
             @media  (max-width: 1000px){
                 #successtext{
@@ -96,9 +178,6 @@
 
             }
             @media (max-width: 900px){
-                .listtool{
-                    display: none;
-                }
                 .textbox{
                     margin-left: -20px;
                 }
@@ -108,6 +187,28 @@
                 }
                 .submitbutton{
                     margin-left: -20px;
+                }
+                .blogboxgroup{
+                    margin-left: 30px;
+                    margin-right: 30px;
+                }
+                .blogbox{
+                    width: calc((100% - 30px)/2);
+                }
+                .firstbar{
+                    display: none;
+                }
+                .secondbar{
+                    display: none;
+                }
+                .firstbarres1{
+                    display: block;
+                }
+                .secondbarres1{
+                    display: block;
+                }
+                .footer .bg{
+                    height: 510px;
                 }
             }
             @media (max-width: 800px){
@@ -120,7 +221,7 @@
                     margin-top: 20px;
                 }
                 .servicebox{
-                    flex-wrap: wrap;
+                    flex-wrap: wrap;    
                 }
                 #agencytext{
                     font-size: 14px;
@@ -185,7 +286,7 @@
                     min-width: 100%;
                 }
                 .inputbox{
-                    width: calc((100% - 80px)/2);;
+                    width: calc((100% - 120px)/2);;
                 }
                 .card{
                     width: calc((100% - 40px*2 - 40px)/3);
@@ -199,6 +300,98 @@
                     margin-left: -20px;
                     margin-right: -50px;
                     transform: translateX(-25px);
+                }
+                .stepboxgroup{
+                    flex-wrap: wrap;
+                    
+                }
+                #milestonetext{
+                    font-size: 25px;
+                    transform: translateY(30px);
+                }
+                #getwithustext{
+                    font-size: 25px;
+                }
+                .stepbox{
+                    width: calc((100% - 30px)/2);
+                }
+                #milestonedetailtext{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                #pricetext{
+                    font-size: 25px;
+                }
+                .price .decor{
+                    transform: translateY(30px);
+                }
+                .pricecard{
+                    width: calc((100% - 30px*2)/2);
+                }
+                .pricecard{
+                    height: 650px;
+                    transform: translateY(-75px);
+                }
+                .content{
+                    flex-wrap: wrap-reverse;
+                    margin-left: 10px;
+                }
+                .textcontent{
+                    width: 95%;
+                }
+                .price .servicebox{
+                    margin-left: -60px;
+                    justify-content: center;
+                }
+                .testimonial{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin-top: 50px;
+                }
+                .testimonial .textbox{
+                    margin-left: 10px;
+                    margin-top: 10px;
+                }
+                #testimonialtext{
+                    font-size: 25px;
+                }
+                #bigchar{
+                    font-size: 160px; 
+                    transform: translateX(10px) translateY(-250px);
+                }
+                .firstbarres1{
+                    display: none;
+                }
+                .secondbarres1{
+                    display: none;
+                }
+                .firstbarres2{
+                    display: flex;
+                }
+                .secondbarres2{
+                    display: block;
+                }
+                .footer .bg{
+                    display: none;
+                }
+                .footer .bgres{
+                    display: flex;
+                }
+                .footer{
+                    overflow: hidden;
+                }
+                
+                @media (max-width: 550px){
+                .pricecard{
+                    width: calc(100% - 30px*2 - 60px);
+                } 
+                .blogboxgroup{
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
+                .blogbox{
+                    width: calc(100% - 60px);
+                }
                 }
             }   
         </style>
@@ -226,7 +419,7 @@
         <div class="service">
             <div class="text">
                 <div style="display: flex; align-items: center; gap: 10px;" class="headingtext">
-                    <p style="color: #fa617d; font-family: sans-serif; font-size: 13px; text-align: left; font-weight: 550;">BE SURE</p>
+                    <p style="color: #fa617d; font-family: 'Montserrat', sans-serif; font-size: 13px; text-align: left; font-weight: 600;">BE SURE</p>
                 </div>
                 <p style="color: #1b2b7c; margin: 10px; margin-left: 0; text-align: left; line-height: 100%;" id="successtext"><b>Your Success Is <br>In Our Hands</b></p>
                 <p style="color: #646A89; font-family: sans-serif; text-align: left;" id="agencytext">Agency with 12 years of history, 15 employees, Fortune 5000 clients and proven results.</p>
@@ -277,7 +470,7 @@
         </div>
         <div class="about">
             <div class="history">
-                <img src="https://my-space.space/numerio/img/way.svg" width="50%" height="auto">
+                <img src="https://my-space.space/numerio/img/way.svg" height="auto" id="aboutimg">
                 <div class="historytext">
                     <p style="color:#fa617d; font-size:14px; font-family:  'Montserrat', sans-serif; font-weight: 600;">THE HISTORY</p>
                     <p style="color:#1b2b7c; font-weight:500; margin: -20px 0px 0px 0px;" id="historyheader">Our Way To Succesful Future</p>
@@ -329,7 +522,7 @@
             <div class="whatwedo">
                 <p style="color:#fa617d; font-size:14px; font-family:  'Montserrat', sans-serif; font-weight: 600;">WHAT WE DO</p>
                 <div class="decor">
-                    <p>What You Will Get With Us</p>
+                    <p id="getwithustext">What You Will Get With Us</p>
                     <p style="color:#768cb3; font-size:20px; font-family: 'Montserrat', sans-serif; font-weight: 500;">Dolor duis voluptate enim exercitation consequat ex.</p>
                 </div>
                 <div class="servicebox">    
@@ -407,10 +600,10 @@
                         </div>
                     </div>
                     <div class="inputboxgroup">
-                        <div class="inputbox"></div>
-                        <div class="inputbox"></div>
-                        <div class="inputbox"></div>
-                        <div class="inputbox"></div>
+                        <input class="inputbox" type="text" placeholder="First name">
+                        <input class="inputbox" type="text" placeholder="Second name">
+                        <input class="inputbox" type="text" placeholder="Enter your phone">
+                        <input class="inputbox" type="text" placeholder="Enter your email">
                     </div>
                     <div style="display: flex; margin-top: 160px;">
                         <div class="submitbutton">Submit</div>
@@ -439,7 +632,7 @@
         <div class="step">
             <p style="color:#fa617d; font-size:14px; font-family:  'Montserrat', sans-serif; font-weight: 600;">STEPS</p>
             <div class="decor">
-                <p>Main Milestones</p>
+                <p id="milestonetext">Main Milestones</p>
             </div>
             <div class="stepboxgroup">
                 <div class="stepbox">
@@ -471,12 +664,12 @@
                     </div>
                 </div>
             </div>
-            <p style="color: #7D6A89; font-size: 12px; font-weight: 600; font-family: 'Montserrat'; padding-left: 25%; padding-right: 20%; padding-top: 20px; line-height: 150%;">PARIATUR MAGNA CUPIDATAT MAGNA SIT INCIDIDUNT NON PARIATUR. SINT NULLA COMMODO QUI MAGNA EIUSMOD QUIS ALIQUA LABORIS OFFICIA EXCEPTEUR NON EU IN. CONSEQUAT ESSE IN DOLORE LABORUM DOLORE UT DUIS ELIT DESERUNT MINIM.</p>
+            <p style="color: #7D6A89; font-size: 12px; font-weight: 600; font-family: 'Montserrat'; padding-top: 20px; line-height: 150%;" id="milestonedetailtext">PARIATUR MAGNA CUPIDATAT MAGNA SIT INCIDIDUNT NON PARIATUR. SINT NULLA COMMODO QUI MAGNA EIUSMOD QUIS ALIQUA LABORIS OFFICIA EXCEPTEUR NON EU IN. CONSEQUAT ESSE IN DOLORE LABORUM DOLORE UT DUIS ELIT DESERUNT MINIM.</p>
         </div>
         <div class="price">
             <p style="color:#fa617d; font-size:14px; font-family:  'Montserrat', sans-serif; font-weight: 600;">PRICES</p>
             <div class="decor">
-                <p>Discover Our Price - List</p>
+                <p id="pricetext">Discover Our Price - List</p>
                 <p style="color:#768cb3; font-size:19px; font-family: 'Montserrat', sans-serif; font-weight: 500;">Dolor duis voluptate enim exercitation consequat ex.</p>
             </div>
             <div class="pricepackbox">
@@ -503,7 +696,7 @@
                             Buy Now
                         </div>
                     </div>
-                    <div class="pricecard" style="height: 650px; transform: translateY(-75px);">
+                    <div class="pricecard" >
                         <div class="round" style="margin-top: 45px;">
                             
                         </div>
@@ -556,16 +749,19 @@
                     <div class="newsbg1">
                         <img src="https://my-space.space/numerio/img/bg/bg-3.svg">
                     </div>
-                    <div class="newsbg2">
-                        <img src="https://my-space.space/numerio/img/newsletter.svg">
-                    </div>
+                    
                 </div>
                 <div class="content">
-                    <p style="color: #1b2b7c; font-size: 35px; font-weight: 600; text-align: left;">Newsletter</p>
-                    <p style="color: #6c728f; font-size: 13px; font-family: 'Montserrat'; margin-top: -30px; font-weight: 500; text-align: left; line-height: 200%;">Pariatur magna cupidatat magna sit incididunt non pariatur. Sint nulla commodo qui magna eiusmod quis aliqua laboris officia excepteur non eu in.</p>
-                    <div style="display: flex; margin-top: 20px;">
-                        <div class="inputbox"></div>
-                        <div class="subcribebutton">Subcribe</div>
+                    <div class="textcontent">
+                        <p style="color: #1b2b7c; font-size: 35px; font-weight: 600; text-align: left;">Newsletter</p>
+                        <p style="color: #6c728f; font-size: 13px; font-family: 'Montserrat'; margin-top: -30px; font-weight: 500; text-align: left; line-height: 200%;">Pariatur magna cupidatat magna sit incididunt non pariatur. Sint nulla commodo qui magna eiusmod quis aliqua laboris officia excepteur non eu in.</p>
+                        <div style="display: flex; margin-top: 20px;">
+                            <input class="inputbox" placeholder="Enter your email" type="text">
+                            <div class="subcribebutton">Subcribe</div>
+                        </div>
+                    </div>
+                    <div class="newsbg2">
+                        <img src="https://my-space.space/numerio/img/newsletter.svg">
                     </div>
                 </div>
             </div>
@@ -574,8 +770,8 @@
             <img src="https://my-space.space/numerio/img/testimonials.svg">
             <div class="textbox">
                 <p style="color:#fa617d; font-size:14px; font-family:  'Montserrat', sans-serif; font-weight: 600;">THEY SAY</p>
-                <p style="color: #1b2b7c; font-size: 40px; font-weight: 600; text-align: left; margin-top: -10px;">Testimonials</p>
-                <p style="color: #646A89; font-family:  'Palanquin', sans-serif; font-size: 200px; position: absolute; transform: translateX(10px) translateY(-320px);">"</p>
+                <p style="color: #1b2b7c; font-weight: 600; text-align: left; margin-top: -10px;" id="testimonialtext">Testimonials</p>
+                <p id="bigchar">"</p>
                 <p style="color: #6c728f; font-size: 18px; font-family: 'Montserrat'; margin-top: 100px; font-weight: 500; text-align: left; line-height: 200%;">"Dolor duis voluptate enim exercitation consequat ex. Voluptate in sunt commodo aute do. Dolor enim dolor labore velit nulla sit exercitation"</p>
                 <div class="coord">
                     <div class="image">
@@ -635,6 +831,7 @@
         </div>
         <div class="footer">
             <div class="bg"></div>
+            <div class="bgres"></div>
             <div class="firstbar">
                 <img src="https://my-space.space/numerio/img/logo.svg" style="width: 110px;">
                 <div class="contactlink"><span style="font-size: 13px; font-family: 'Montserrat'; color: #424348; font-weight: 500;">Find us here: </span><span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 13px;font-weight: 600;">Fb </span><span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 13px;font-weight: 600;">Ins </span><span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 13px;font-weight: 600;">In </span></div>
@@ -644,6 +841,32 @@
                     <span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 14px;font-weight: 600;"> +1 546 987 21 85</span>
                 </div>
                 <div class="startbutton2">Get Started</div>
+            </div>
+            <div class="firstbarres1">
+                <div class="upperbarres1">
+                    <img src="https://my-space.space/numerio/img/logo.svg" style="width: 110px;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; width: 40%;">
+                        <div class="startbutton2">Get Started</div>
+                        <div class="contactlink"><span style="font-size: 13px; font-family: 'Montserrat'; color: #424348; font-weight: 500;">Find us here: </span><span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 13px;font-weight: 600;">Fb </span><span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 13px;font-weight: 600;">Ins </span><span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 13px;font-weight: 600;">In </span></div>
+                    </div>
+                </div>
+                <div style="margin-top: 10px;">
+                    <span style="font-size: 13px; font-family: 'Montserrat'; color: #424348; font-weight: 500;">Have a question? Call us!</span>
+                    <iconify-icon icon="carbon:phone" style="color: #fa617d; margin-left: 20px;"></iconify-icon>
+                    <span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 14px;font-weight: 600;"> +1 546 987 21 85</span>
+                </div>
+            </div>
+            <div class="firstbarres2">
+                <img src="https://my-space.space/numerio/img/logo.svg" style="width: 110px;">
+                <div class="startbutton2">Get Started</div>
+                <div class="contactlink" style="margin-top: 20px; display: flex; justify-content: center;"><span style="font-size: 13px; font-family: 'Montserrat'; color: #424348; font-weight: 500; ">Find us here: </span><span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 13px;font-weight: 600;">Fb </span><span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 13px;font-weight: 600;">Ins </span><span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 13px;font-weight: 600;">In </span></div>
+                <div style="margin-top: 20px; width: 100%; display: flex; justify-content: center;">
+                    <span style="font-size: 13px; font-family: 'Montserrat'; color: #424348; font-weight: 500;">Have a question? Call us!</span>
+                </div>
+                <div>
+                    <iconify-icon icon="carbon:phone" style="color: #fa617d;"></iconify-icon>
+                    <span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 16px;font-weight: 600;"> +1 546 987 21 85</span>
+                </div>
             </div>
             <div style="border-bottom: 1px solid #c4c7ce"></div>
             <div class="secondbar">
@@ -655,6 +878,34 @@
                     <li class="listtoolitem">Price</li>
                     <li class="listtoolitem">Testimonials</li>
                     <li class="listtoolitem">Blog</li>
+                </div>
+            </div>
+            <div class="secondbarres1">
+                <div style="display: flex; justify-content:center">
+                    <div class="listtool">
+                        <li class="listtoolitem">Services</li>
+                        <li class="listtoolitem">About</li>
+                        <li class="listtoolitem">Steps</li>
+                        <li class="listtoolitem">Price</li>
+                        <li class="listtoolitem">Testimonials</li>
+                        <li class="listtoolitem">Blog</li>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center; margin-bottom: 10px;">
+                    <div style="font-size: 12px; color:#6c728f;margin-bottom: 10px;">All rights reserved. Numerio 2021</div>
+                </div>
+            </div>
+            <div class="secondbarres2">
+                <ul class="listtool2">
+                    <li class="listtoolitem">Services</li>
+                    <li class="listtoolitem">About</li>
+                    <li class="listtoolitem">Steps</li>
+                    <li class="listtoolitem">Price</li>
+                    <li class="listtoolitem">Testimonials</li>
+                    <li class="listtoolitem">Blog</li>
+                </ul>
+                <div style="display: flex; justify-content: center; margin-bottom: 10px;">
+                    <div style="font-size: 14px; color:#6c728f;margin-bottom: 10px;">All rights reserved. Numerio 2021</div>
                 </div>
             </div>
         </div>

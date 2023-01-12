@@ -170,7 +170,7 @@ p {
   position: relative;
   margin-left: 30px;
   margin-right: 30px;
-  top: -100px;
+  top: -200px;
 }
 .about .history {
   display: flex;
@@ -330,6 +330,7 @@ p {
 .about .whatwedo .getstarted .bgstart .bg1 {
   position: absolute;
   top: -180px;
+  transform: translateX(-10%);
   background: url("https://my-space.space/numerio/img/bg/bg-2.svg") 50% 0 no-repeat;
   width: 150%;
   background-size: auto 100%;
@@ -367,6 +368,9 @@ p {
   height: 50px;
   border: 1px solid rgba(144, 149, 173, 0.4039215686);
   border-radius: 80px;
+  background-color: rgba(27, 43, 124, 0);
+  color: rgb(117, 117, 117);
+  padding-left: 20px;
 }
 .about .whatwedo .getstarted .submitbutton {
   position: relative;
@@ -435,10 +439,10 @@ p {
   display: flex;
 }
 .step .stepboxgroup .stepbox {
-  width: calc((100% - 90px) / 4);
   height: 200px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .step .stepboxgroup .stepbox .index {
   z-index: -1;
@@ -478,20 +482,18 @@ p {
 }
 .price .pricepackbox {
   width: 100%;
+  position: relative;
 }
 .price .pricepackbox .servicebox {
   position: relative;
   top: 100px;
   display: flex;
   width: 100%;
-  height: 800px;
   gap: 30px;
   padding: 60px;
 }
 .price .pricepackbox .servicebox .pricecard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: calc((100% - 180px) / 3);
-  height: 500px;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -537,7 +539,7 @@ p {
   box-shadow: 0px 20px 10px rgba(225, 228, 246, 0.6352941176);
 }
 .price .newsletter {
-  position: relative;
+  margin-top: 100px;
   width: 100%;
 }
 .price .newsletter .bg {
@@ -548,26 +550,25 @@ p {
 .price .newsletter .bg .newsbg1 {
   position: absolute;
 }
-.price .newsletter .bg .newsbg2 {
-  position: absolute;
-  transform: scale(0.9);
-  left: 55%;
-  top: 27%;
-}
 .price .newsletter .content {
   position: relative;
-  width: 55%;
-  margin-left: 40px;
+  width: 100%;
   transform: translateY(-60px);
+  display: flex;
+  justify-content: center;
 }
-.price .newsletter .content .inputbox {
+.price .newsletter .content .textcontent {
+  position: relative;
+}
+.price .newsletter .content .textcontent .inputbox {
   position: relative;
   width: 70%;
   height: 50px;
   border: 1px solid rgba(144, 149, 173, 0.4039215686);
   border-radius: 80px;
+  padding-left: 20px;
 }
-.price .newsletter .content .subcribebutton {
+.price .newsletter .content .textcontent .subcribebutton {
   background-color: #fa617d;
   font-family: "Montserrat";
   font-weight: 600;
@@ -580,17 +581,25 @@ p {
   justify-content: center;
   box-shadow: 0px 10px 20px #ffcbd5;
 }
+.price .newsletter .content .newsbg2 {
+  position: relative;
+  margin-top: -50px;
+}
+.price .newsletter .content .newsbg2 img {
+  width: 35vw;
+}
 
 .testimonial {
   width: 100%;
   display: flex;
   margin-top: 250px;
+  justify-content: space-between;
 }
 .testimonial img {
   width: 50%;
 }
 .testimonial .textbox {
-  margin-left: 160px;
+  margin-left: 10px;
   margin-top: 100px;
   padding-right: 40px;
 }
@@ -627,13 +636,9 @@ p {
 }
 .blog .blogboxgroup {
   display: flex;
-  width: calc(100% - 60px);
   gap: 30px;
-  margin-left: 60px;
-  margin-top: 60px;
 }
 .blog .blogboxgroup .blogbox {
-  width: calc((100% - 90px) / 2);
   height: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
@@ -660,13 +665,22 @@ p {
   background: url("https://my-space.space/numerio/img/bg/footer-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 450px;
+}
+.footer .bgres {
+  position: absolute;
+  width: 100vw;
+  z-index: -4;
+  top: 22%;
+  background: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  height: 78%;
 }
 .footer .firstbar {
   padding-left: 60px;
   padding-right: 60px;
   position: relative;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 180px;
@@ -687,10 +701,62 @@ p {
   font-size: 14px;
   box-shadow: 0px 10px 10px #c5c7e1;
 }
+.footer .firstbarres1 {
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  align-items: center;
+  margin-top: 180px;
+  margin-bottom: 20px;
+}
+.footer .firstbarres1 .upperbarres1 {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .firstbarres1 .startbutton2 {
+  width: 130px;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 14px;
+  height: 45px;
+  background-color: #1b2b7c;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0px 10px 10px #c5c7e1;
+}
+.footer .firstbarres2 {
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 180px;
+  margin-bottom: 20px;
+}
+.footer .firstbarres2 .startbutton2 {
+  width: 400px;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 14px;
+  height: 45px;
+  background-color: #1b2b7c;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0px 10px 10px #c5c7e1;
+  margin-top: 20px;
+}
 .footer .secondbar {
   padding-left: 60px;
   padding-right: 90px;
-  display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -706,6 +772,39 @@ p {
   font-family: sans-serif;
   padding: 20px;
   font-size: 14px;
+}
+.footer .secondbarres1 {
+  width: 100%;
+}
+.footer .secondbarres1 .listtool {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  box-sizing: border-box;
+}
+.footer .secondbarres1 .listtool .listtoolitem {
+  color: #9095ad;
+  font-family: sans-serif;
+  padding: 20px;
+  font-size: 14px;
+}
+.footer .secondbarres2 {
+  width: 100%;
+}
+.footer .secondbarres2 .listtool2 {
+  list-style-type: none;
+  position: relative;
+  margin-left: -30px;
+  margin-top: 30px;
+}
+.footer .secondbarres2 .listtool2 .listtoolitem {
+  color: #9095ad;
+  font-family: sans-serif;
+  padding: 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
 }
 
 .servicecard:nth-child(even) {
