@@ -131,6 +131,15 @@
                 .footer .bgres{
                     display: none;
                 }
+                .about{
+                    margin-top: -260px;
+                }
+                .serviceicon2 p{
+                    width: 70%;
+                }
+                .moreicon{
+                    display: none;
+                }
             }
             @media (max-width: 1200px){
                 #startedtext{
@@ -156,9 +165,7 @@
                 #historyheader{
                     font-size:40px; 
                 }
-                .historytext{
-                    transform: translateX(-80px);
-                }
+                
                 .service .servicebox{
                     margin-left: 0px;
                     margin-right: -30px;
@@ -169,6 +176,7 @@
                 .price .servicebox{
                     margin-left: -30px;
                 }
+
             }
             @media  (max-width: 1000px){
                 #successtext{
@@ -237,9 +245,7 @@
                     height: 20%;
                     background-size: cover;
                 }
-                .historytext{
-                    transform: translateX(-100px);
-                }
+                
                 .stat{
                     flex-wrap: wrap;
                     justify-content: space-around;
@@ -260,9 +266,13 @@
                 .servicecard2{
                     width: calc((100% - 30px)/2);
                 }
-                .about{
-                    margin-left: 10px;
-                    margin-right: 10px;
+                .serviceicon2{
+                    flex-wrap: wrap;
+                }
+                .serviceicon2 p{
+                    width: 100%;
+                    margin-top: -10px;
+                    margin-bottom: -10px;
                 }
                 .whatwedo{
                     padding: 0;
@@ -380,8 +390,20 @@
                 .footer{
                     overflow: hidden;
                 }
-                
-                @media (max-width: 550px){
+                #historyheader{
+                    font-size: 25px;
+                }
+                .about{
+                    margin-top: 100px;
+                }
+                .header .listtool{
+                    display: none;
+                }
+                .moreicon{
+                    display: flex;
+                }
+            }   
+            @media (max-width: 550px){
                 .pricecard{
                     width: calc(100% - 30px*2 - 60px);
                 } 
@@ -392,8 +414,13 @@
                 .blogbox{
                     width: calc(100% - 60px);
                 }
+                #aboutimg{
+                    display: none;
                 }
-            }   
+                .historytext{
+                    margin-left: 15px;
+                }
+            }
         </style>
     </head>
     <body>
@@ -414,6 +441,13 @@
                     <li class="listtoolitem">Blog</li>
                 </div>
                 <div class="startbutton"><b>Get Started</b></div>
+                <div class="moreicon">
+                    <div class="hamburger">
+                        <div class="hori"></div>
+                        <div class="hori"></div>
+                        <div class="hori"></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="service">
@@ -470,7 +504,7 @@
         </div>
         <div class="about">
             <div class="history">
-                <img src="https://my-space.space/numerio/img/way.svg" height="auto" id="aboutimg">
+                <img src="https://my-space.space/numerio/img/way.svg" id="aboutimg">
                 <div class="historytext">
                     <p style="color:#fa617d; font-size:14px; font-family:  'Montserrat', sans-serif; font-weight: 600;">THE HISTORY</p>
                     <p style="color:#1b2b7c; font-weight:500; margin: -20px 0px 0px 0px;" id="historyheader">Our Way To Succesful Future</p>
@@ -532,7 +566,7 @@
                         </div>
                         <div class="serviceicon2">
                             <img src="https://my-space.space/numerio/img/icons-svg/get-1.svg" class="serviceimg">
-                            <p style="color: #1b2b7c; font-size: 18px; font-weight: 600; margin-left: 20px;">Research & Analysis</p>
+                            <p style="color: #1b2b7c; font-size: 18px; font-weight: 600;">Research & Analysis</p>
                         </div>
                         <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: 20px; text-align: left; font-family: 'Montserrat'; font-weight: 500; position: relative; line-height: 200%;">Dolor duis voluptate enim exercitation consequat ex. Voluptate in sunt commodo aute do. Dolor enim dolor labore velit nulla sit exercitation irure esse proid.</p>
                     </div>
@@ -542,7 +576,7 @@
                         </div>
                         <div class="serviceicon2">
                             <img src="https://my-space.space/numerio/img/icons-svg/get-2.svg" class="serviceimg">
-                            <p style="color: #1b2b7c; font-size: 18px; font-weight: 600; margin-left: 20px;">Unique Content</p>
+                            <p style="color: #1b2b7c; font-size: 18px; font-weight: 600; ">Unique Content</p>
                         </div>
                         <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: 20px; text-align: left; font-family: 'Montserrat'; font-weight: 500; position: relative; line-height: 200%;">Voluptate in sim dolor labore velit nuunt commodo aute do. Dolor enim dolor labore im dolor labore velit te dolor enim dolor labore velit nul.</p>
                     </div>
@@ -552,7 +586,7 @@
                         </div>
                         <div class="serviceicon2">
                             <img src="https://my-space.space/numerio/img/icons-svg/get-3.svg" class="serviceimg">
-                            <p style="color: #1b2b7c; font-size: 18px; font-weight: 600; margin-left: 20px;">Thematic Links</p>
+                            <p style="color: #1b2b7c; font-size: 18px; font-weight: 600; ">Thematic Links</p>
                         </div>
                         <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: 20px; text-align: left; font-family: 'Montserrat'; font-weight: 500; position: relative; line-height: 200%;">Pariatur magna cupidatat magna sit incididunt non pariatur. Sint nulla commodo qui magna eiusmod quis aliqua laboris officia excepteur non eu in.</p>
                     </div>
@@ -562,7 +596,7 @@
                         </div>
                         <div class="serviceicon2">
                             <img src="https://my-space.space/numerio/img/icons-svg/get-4.svg" class="serviceimg">
-                            <p style="color: #1b2b7c; font-size: 18px; font-weight: 600; margin-left: 20px;">Effective UX/UI Design</p>
+                            <p style="color: #1b2b7c; font-size: 18px; font-weight: 600; ">Effective UX/UI Design</p>
                         </div>
                         <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: 20px; text-align: left; font-family: 'Montserrat'; font-weight: 500; position: relative; line-height: 200%;">Pariatur magna cupidatat magna sit incididunt non pariatur. Sint nulla commodo qui magna eiusmod quis aliqua laboris officia excepteur non eu in.</p>
                     </div>
@@ -572,7 +606,7 @@
                         </div>
                         <div class="serviceicon2">
                             <img src="https://my-space.space/numerio/img/icons-svg/get-5.svg" class="serviceimg">
-                            <p style="color: #1b2b7c; font-size: 18px; font-weight: 600; margin-left: 20px;">Responsive & High Speed</p>
+                            <p style="color: #1b2b7c; font-size: 18px; font-weight: 600; ">Responsive & High Speed</p>
                         </div>
                         <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: 20px; text-align: left; font-family: 'Montserrat'; font-weight: 500; position: relative; line-height: 200%;">Dolor duis voluptate enim exercitation consequat ex. Voluptate in sunt commodo aute do. Dolor enim dolor labore velit nulla sit exercitation irure esse proid.</p>
                     </div>
@@ -582,7 +616,7 @@
                         </div>
                         <div class="serviceicon2">
                             <img src="https://my-space.space/numerio/img/icons-svg/get-6.svg" class="serviceimg">
-                            <p style="color: #1b2b7c; font-size: 18px; font-weight: 600; margin-left: 20px;">Quality & Valid Code</p>
+                            <p style="color: #1b2b7c; font-size: 18px; font-weight: 600; ">Quality & Valid Code</p>
                         </div>
                         <p style="color: #6c728f; font-size: 13px; padding:20px; margin-top: 20px; text-align: left; font-family: 'Montserrat'; font-weight: 500; position: relative; line-height: 200%;">Voluptate in sim dolor labore velit nuunt commodo aute do. Dolor enim dolor labore im dolor labore velit te dolor enim dolor labore velit nul.</p>
                     </div>
@@ -756,7 +790,7 @@
                         <p style="color: #1b2b7c; font-size: 35px; font-weight: 600; text-align: left;">Newsletter</p>
                         <p style="color: #6c728f; font-size: 13px; font-family: 'Montserrat'; margin-top: -30px; font-weight: 500; text-align: left; line-height: 200%;">Pariatur magna cupidatat magna sit incididunt non pariatur. Sint nulla commodo qui magna eiusmod quis aliqua laboris officia excepteur non eu in.</p>
                         <div style="display: flex; margin-top: 20px;">
-                            <input class="inputbox" placeholder="Enter your email" type="text">
+                            <input class="inputbox" placeholder="Enter your email" type="text" style="background-color:#1b2b7c00">
                             <div class="subcribebutton">Subcribe</div>
                         </div>
                     </div>
