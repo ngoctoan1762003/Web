@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   background-color: white;
   font-family: "Roboto Slab", serif;
   position: relative;
@@ -832,13 +833,63 @@ p {
 }
 
 .sidecanvas {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 11;
-  width: 100vw;
+  margin: 0;
+  padding: 0;
+  width: 100%;
   height: 100vh;
   background-color: white;
-  transform: translateX(100vw);
+  margin-left: 100vw;
+  transition-delay: 0s;
+}
+.sidecanvas .x-icon {
+  margin-left: 95%;
+  margin-top: 30px;
+}
+.sidecanvas .x-icon .hamburger {
+  display: flex;
+  width: 30px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.sidecanvas .x-icon .hamburger .hori {
+  transform: translateY(-5px);
+  margin-right: 10px;
+  margin-bottom: -1px;
+  height: 5px;
+  width: 20px;
+  border-bottom: 2px solid #000000;
+}
+.sidecanvas .x-icon .hamburger .hori:nth-child(3) {
+  width: 15px;
+}
+.sidecanvas .content {
+  position: relative;
+  margin-top: 20px;
+}
+.sidecanvas .content .list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sidecanvas .content .list .listitem {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  color: #7D6A89;
+  display: flex;
+  justify-content: center;
+}
+.sidecanvas .content .list p {
+  width: 100%;
+  margin-bottom: -2px;
+  font-family: "Montserrat";
+  font-weight: 600;
 }
 
 .servicecard:nth-child(even) {

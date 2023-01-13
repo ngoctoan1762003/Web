@@ -1,10 +1,20 @@
 let isOpen = false;
 const sideCanvas = document.querySelector('.sidecanvas');
-console.log(sideCanvas)
+const moreIcon = document.querySelector('.moreicon');
 function switchCanvas(){
-    if(isOpen == false) sideCanvas.style.display = flex;
-    else sideCanvas.style.display = none;
+    sideCanvas.style.transition = 'transform 1s ease';    
+    if(isOpen == false) {
+        sideCanvas.style.transform = 'translateX(-100vw)'
+    }
+    else {
+        sideCanvas.style.transform = 'translateX(100vw)'
+    }
     isOpen = !isOpen;
-    console.log('oke');
+    setTimeout(function(){
+        sideCanvas.style.transition = 'transform 0s';    
+    }, 1000)
 }
-sideCanvas.addEventListener('click', switchCanvas)
+moreIcon.addEventListener('click', switchCanvas);
+
+const x_icon = document.querySelector(".x-icon");
+x_icon.addEventListener('click', switchCanvas);
