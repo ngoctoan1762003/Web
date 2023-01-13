@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
         <style>
-            @media (max-width: 1800px){
+            @media (max-width: 4000px){
                 #successtext{
                     font-size: 60px; 
                 }
@@ -132,12 +132,18 @@
                     display: none;
                 }
                 .about{
-                    margin-top: -260px;
+                    margin-top: 200px;
                 }
                 .serviceicon2 p{
                     width: 70%;
                 }
                 .moreicon{
+                    display: none;
+                }
+                .whatwedo .servicebox{
+                    width: 100%;
+                }
+                .sidecanvas{
                     display: none;
                 }
             }
@@ -262,6 +268,10 @@
                 .about{
                     margin-left: 10px;
                     margin-right: 10px;
+                }
+                .whatwedo .servicebox{
+                    width: calc(100% + 40px);
+                    margin-left: -20px;
                 }
                 .servicecard2{
                     width: calc((100% - 30px)/2);
@@ -424,6 +434,8 @@
         </style>
     </head>
     <body>
+        <div class="sidecanvas"></div>
+
         <div class="bg">
             <div class="bg1"></div>
             <div class="bg2"></div>
@@ -943,5 +955,6 @@
                 </div>
             </div>
         </div>
+        <script src="index.js"></script>
     </body>
 </html>

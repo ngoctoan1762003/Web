@@ -59,6 +59,10 @@ p{
     @include flex(space-between, center);
     .moreicon{
         .hamburger{
+            display: flex;
+            width: 30px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
             .hori{
                 transform: translateY(-5px);
                 margin-right: 10px;
@@ -144,7 +148,6 @@ p{
         top: 150px;
         display: flex;
         width: 100%;
-        height: 800px;
         gap: 28px;
         .servicecard{
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -279,9 +282,7 @@ p{
             position: relative;
             top: 100px;
             flex-wrap: wrap;
-            display: flex;
-            
-            width: 100%;
+            display: flex;        
             height: auto;
             gap: 30px;
             .servicecard2{
@@ -850,6 +851,15 @@ p{
         }
 
     }
+}
+.sidecanvas{
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    transform: translateX(100vw);
 }
 .servicecard:nth-child(even){
     transform: translateY(-60px);
