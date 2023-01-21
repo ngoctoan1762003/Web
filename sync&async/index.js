@@ -16,29 +16,28 @@ function hideLoading() {
     $('.loading').style.display = 'none'
 }
 
-function toggleBtn(index) {
+async function toggleBtn(index) {
     let name
     let status
     showLoading()
-    axios.get(`https://63c96a17904f040a965db8df.mockapi.io/todo-list/${index}`)
-    .then(
-        (response) => {
+    try{
+    const response = await axios.get(`https://63c96a17904f040a965db8df.mockapi.io/todo-list/${index}`)
+
             const temp = response.data
             name = temp.name
             status = temp.status
             if (status === "active") status = "completed"
             else status = "active"
-            axios.put(`https://63c96a17904f040a965db8df.mockapi.io/todo-list/${index}`,
+            await axios.put(`https://63c96a17904f040a965db8df.mockapi.io/todo-list/${index}`,
                 { status, name }).then(() => {
                     fetchData()
                     input.value = ''
                 })
             fetchData()
-        }
-    )
-    .catch((error) => {
+    
+    }catch(error){
         alert('Co loi');
-    })
+    }
 }
 
 function edit(id) {
@@ -59,9 +58,9 @@ function del(id) {
 async function fetchData(){
     console.log('fetch');
     showLoading()
-    tasks = await axios.get('https://63c96a17904f040a965db8df.mockapi.io/todo-list')
-    .then(
-        (response) => {
+    try{
+        const response = await axios.get('https://63c96a17904f040a965db8df.mockapi.io/todo-list')
+
             data = response.data
             console.log(data)
 
@@ -70,13 +69,12 @@ async function fetchData(){
             if (currentPage === "completed") showCompletedItems()
 
             showItemsLeft()
-        })
-    .then(() => {
+
+
         hideLoading()
-    })
-    .catch((error) => {
+    }catch(e){
         alert("co loi");
-    })
+    }
 }
 
 const showItems = () => {
@@ -140,6 +138,7 @@ $('.new-todo').addEventListener('keypress', function (event) {
         const name = input.value
         const status = "active"
         showLoading()
+        
         axios.post('https://63c96a17904f040a965db8df.mockapi.io/todo-list',
             { status, name })
         .then(() => {
@@ -181,7 +180,7 @@ $('.completed').addEventListener('click', function (event) {
     currentPage = "completed"
 })
 
-function editName(event) {
+async function editName(event) {
     if (event.key === "Enter") {
         event.preventDefault()
         let item = document.getElementById(`${currentEdit}`)
@@ -190,28 +189,30 @@ function editName(event) {
         let name = box.value
         let status
         showLoading()
-        axios.get(`https://63c96a17904f040a965db8df.mockapi.io/todo-list/${currentEdit}`)
-        .then(response => {
+        try{
+            const response = await axios.get(`https://63c96a17904f040a965db8df.mockapi.io/todo-list/${currentEdit}`)
+        
             status = response.data.status
-        })
-        .catch((error) => {
+        
+        }catch(error){
             alert("co loi");
-        })
-        axios.put(`https://63c96a17904f040a965db8df.mockapi.io/todo-list/${currentEdit}`,
+        }
+        try{
+            const res = await axios.put(`https://63c96a17904f040a965db8df.mockapi.io/todo-list/${currentEdit}`,
             {
                 name,
                 status
             })
-        .then(() => {
-            fetchData()
+        
+            const res2 = fetchData()
             box.style.display = "none"
-        })
-        .then(() => {
+
+
             hideLoading()
-        })
-        .catch((error) => {
+        
+        }catch(error){
             alert("co loi");
-        })
+        }
     }
 }
 
