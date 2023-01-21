@@ -56,10 +56,10 @@ function del(id) {
     )
 }
 
-const fetchData = () => {
+async function fetchData(){
     console.log('fetch');
     showLoading()
-    tasks = axios.get('https://63c96a17904f040a965db8df.mockapi.io/todo-list')
+    tasks = await axios.get('https://63c96a17904f040a965db8df.mockapi.io/todo-list')
     .then(
         (response) => {
             data = response.data
@@ -215,8 +215,20 @@ function editName(event) {
     }
 }
 
-showLoading()
-fetchData()
+async function main() {
+    try {
+        showLoading()
+        await fetchData()
+        showItems()
+    } catch (error) {
+        alert("Loading failed")
+    } finally {
+        hideLoading()
+    }
+
+}
+
+main()
 
 
 
