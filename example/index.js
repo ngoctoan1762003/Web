@@ -77,7 +77,6 @@ async function main() {
     } finally {
         hideLoading()
     }
-
 }
 
 $('#my-form').addEventListener('submit', async function(e){
