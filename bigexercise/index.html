@@ -143,7 +143,13 @@
                 .whatwedo .servicebox{
                     width: 100%;
                 }
-
+                .title{
+                    font-size: 60px; 
+                    line-height: 100%;
+                }
+                .contactheader{
+                    display: flex;
+                }
             }
             @media (max-width: 1200px){
                 #startedtext{
@@ -222,6 +228,7 @@
                 .footer .bg{
                     height: 510px;
                 }
+
             }
             @media (max-width: 800px){
                 .text{
@@ -410,6 +417,10 @@
                 .moreicon{
                     display: flex;
                 }
+                .contactheader{
+                    visibility: hidden;
+                    margin-bottom: -100px;
+                }
             }   
             @media (max-width: 550px){
                 .pricecard{
@@ -465,17 +476,65 @@
             <div class="bg1"></div>
             <div class="bg2"></div>
         </div>
+        
+        <div class="popup-form">
+            <div class="submit-form">
+                <div class="close-icon">
+                    X
+                </div>
+                <div class="title" style="font-weight: 500;color: #1b2b7c;margin-bottom: -5px;">Get A Free Consultation</div>
+                <div style="color: #6c728f; margin-top: 40px; font-family: 'Montserrat'; font-weight: 500;">Culpa non ex tempor qui nulla laborum. Laboris culpa ea incididunt dolore ipsum tempor duis do ullamc.</div>
+                <div class="popup-inputboxgroup">
+                    <input class="popup-inputbox" type="text" placeholder="Name">
+                    <input class="popup-inputbox" type="text" placeholder="Email">
+                    <input class="popup-inputbox" type="text" placeholder="Message" style="height: 100px; border-radius: 20px;">
+                </div>
+                <div style="display: flex; margin-top: 220px;">
+                    <div class="popup-submitbutton">Submit</div>
+                    <p style="font-size: 12px; font-family:'Montserrat'; color: #424348; font-weight: 500; margin-left: 40px;">I accept the <span style="color: #fa617d;">Terms and Conditions</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-form-2">
+            <div class="sankyou-form">
+                <div class="close-icon-2">
+                    X
+                </div>
+                <div class="title" style="font-weight: 500;color: #1b2b7c;margin-top: 50px;">Sank You</div>
+                <div style="font-family: 'Montserrat'; font-size: 12px; color: #7D6A89; margin-top: 30px; font-weight: 500; margin-bottom: 10px;">Dolor duis voluptate enim exercitation consequat ex. Voluptate </div>
+                <svg width="200" height="184" viewBox="0 0 200 184" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M178.566 91.6643C178.566 139.987 139.392 179.162 91.0686 179.162C42.744 179.162 3.57129 139.987 3.57129 91.6643C3.57129 43.3397 42.744 4.16699 91.0686 4.16699C139.392 4.16699 178.566 43.3397 178.566 91.6643Z" fill="rgba(255, 154, 160, 0.991703)"></path>
+                    <path d="M91.6644 183.327C41.1242 183.327 0 142.205 0 91.6644C0 41.1242 41.1242 0 91.6644 0C109.23 0 126.33 5.01694 141.112 14.4908C144.02 16.3585 144.863 20.2249 143.004 23.124C141.138 26.0246 137.262 26.8745 134.371 25.0084C121.597 16.833 106.839 12.4996 91.6644 12.4996C48.0149 12.4996 12.4996 48.0149 12.4996 91.6644C12.4996 135.312 48.0149 170.828 91.6644 170.828C135.312 170.828 170.828 135.312 170.828 91.6644C170.828 89.0552 170.703 86.472 170.461 83.9315C170.129 80.4984 172.645 77.4391 176.086 77.1141C179.494 76.6731 182.569 79.2975 182.903 82.7307C183.185 85.6725 183.327 88.6478 183.327 91.6644C183.327 142.205 142.205 183.327 91.6644 183.327Z" fill="rgba(249, 73, 115, 0.991703)"></path>
+                    <path d="M102.08 112.496C100.481 112.496 98.8799 111.887 97.6638 110.663L60.165 73.1643C57.7237 70.7214 57.7237 66.7634 60.165 64.3221C62.6063 61.8808 66.5643 61.8808 69.0057 64.3221L102.089 97.4052L189.327 10.1657C191.77 7.72438 195.728 7.72438 198.169 10.1657C200.61 12.607 200.61 16.5651 198.169 19.0064L106.505 110.671C105.279 111.887 103.68 112.496 102.08 112.496Z" fill="rgba(249, 73, 115, 0.991703)"></path>
+                </svg>
+                <div style="font-family: 'Montserrat'; font-size: 12px; color: #7D6A89; margin-top: 10px; font-weight: 500; margin-bottom: 10px;">Dolor duis voluptate enim exercitation consequat ex. Voluptate </div>
+                <div class="popup-submitbutton-2">Ok</div>
+            </div>
+        </div>
+
         <div class="header">
+            <div class="contactheader">
+                <div class="topcontact">
+                <div class="contactlink"><span style="font-size: 12px; font-family: 'Montserrat'; color: #757B97; font-weight: 500;">Find us here: </span><span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 13px;font-weight: 600;" class="linktext">Fb </span><span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 13px;font-weight: 600;" class="linktext">Ins </span><span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 13px;font-weight: 600;" class="linktext">In </span></div>
+                <div>
+                    <span style="font-size: 12px; font-family: 'Montserrat'; color: #757B97; font-weight: 500;">Have a question? Call us!</span>
+                    <iconify-icon icon="carbon:phone" style="color: #fa617d; margin-left: 20px;"></iconify-icon>
+                        <span style="color: #1b2b7c; font-family: 'Montserrat'; font-size: 14px;font-weight: 600;"> +1 546 987 21 85</span>
+                </div>
+                </div>
+                <div class="hr"></div>
+            </div>
             <img src="https://my-space.space/numerio/img/logo.svg" style="width: 110px;">
 
             <div class="toolbar">
                 <div class="listtool">
-                    <li class="listtoolitem">Services</li>
-                    <li class="listtoolitem">About</li>
-                    <li class="listtoolitem">Steps</li>
-                    <li class="listtoolitem">Price</li>
-                    <li class="listtoolitem">Testimonials</li>
-                    <li class="listtoolitem">Blog</li>
+                    <li class="listtoolitem" id="service-item"><a href="#service">Services</a></li>
+                    <li class="listtoolitem" id="about-item"><a href="#about">About</a></li>
+                    <li class="listtoolitem" id="step-item"><a href="#step">Steps</a></li>
+                    <li class="listtoolitem" id="price-item"><a href="#price">Price</a></li>
+                    <li class="listtoolitem" id="testimonial-item"><a href="#testimonial">Testimonials</a></li>
+                    <li class="listtoolitem" id="blog-item"><a href="#blog">Blog</a></li>
                 </div>
                 <div class="startbutton"><b>Get Started</b></div>
                 <div class="moreicon">
@@ -487,7 +546,7 @@
                 </div>
             </div>
         </div>
-        <div class="service">
+        <div class="service" id="service">
             <div class="text">
                 <div style="display: flex; align-items: center; gap: 10px;" class="headingtext">
                     <p style="color: #fa617d; font-family: 'Montserrat', sans-serif; font-size: 13px; text-align: left; font-weight: 600;">BE SURE</p>
@@ -539,7 +598,7 @@
                 </div>
             </div>
         </div>
-        <div class="about">
+        <div class="about" id="about">
             <div class="history">
                 <img src="https://my-space.space/numerio/img/way.svg" id="aboutimg">
                 <div class="historytext">
@@ -700,7 +759,7 @@
                 </div>
             </div>
         </div>
-        <div class="step">
+        <div class="step" id="step">
             <p style="color:#fa617d; font-size:14px; font-family:  'Montserrat', sans-serif; font-weight: 600;">STEPS</p>
             <div class="decor">
                 <p id="milestonetext">Main Milestones</p>
@@ -737,7 +796,7 @@
             </div>
             <p style="color: #7D6A89; font-size: 12px; font-weight: 600; font-family: 'Montserrat'; padding-top: 20px; line-height: 150%;" id="milestonedetailtext">PARIATUR MAGNA CUPIDATAT MAGNA SIT INCIDIDUNT NON PARIATUR. SINT NULLA COMMODO QUI MAGNA EIUSMOD QUIS ALIQUA LABORIS OFFICIA EXCEPTEUR NON EU IN. CONSEQUAT ESSE IN DOLORE LABORUM DOLORE UT DUIS ELIT DESERUNT MINIM.</p>
         </div>
-        <div class="price">
+        <div class="price" id="price">
             <p style="color:#fa617d; font-size:14px; font-family:  'Montserrat', sans-serif; font-weight: 600;">PRICES</p>
             <div class="decor">
                 <p id="pricetext">Discover Our Price - List</p>
@@ -837,7 +896,7 @@
                 </div>
             </div>
         </div>
-        <div class="testimonial">
+        <div class="testimonial" id="testimonial">
             <img src="https://my-space.space/numerio/img/testimonials.svg">
             <div class="textbox">
                 <p style="color:#fa617d; font-size:14px; font-family:  'Montserrat', sans-serif; font-weight: 600;">THEY SAY</p>
@@ -856,7 +915,7 @@
                 </div>
             </div>
         </div>
-        <div class="blog">
+        <div class="blog" id="blog">
             <p style="color:#fa617d; font-size:14px; font-family:  'Montserrat', sans-serif; font-weight: 600;">NEWS</p>
             <div class="decor">
                 <p style="color: #1b2b7c; font-size: 40px; font-weight: 600; margin-top: -10px;">Read Our Blog</p>
@@ -943,12 +1002,12 @@
             <div class="secondbar">
                 <div style="font-size: 12px; color:#6c728f; width: 20%;">All rights reserved. Numerio 2021</div>
                 <div class="listtool">
-                    <li class="listtoolitem">Services</li>
-                    <li class="listtoolitem">About</li>
-                    <li class="listtoolitem">Steps</li>
-                    <li class="listtoolitem">Price</li>
-                    <li class="listtoolitem">Testimonials</li>
-                    <li class="listtoolitem">Blog</li>
+                    <li class="listtoolitem"><a href="#service">Services</a></li>
+                    <li class="listtoolitem"><a href="#about">About</a></li>
+                    <li class="listtoolitem"><a href="#step">Steps</a></li>
+                    <li class="listtoolitem"><a href="#price">Price</a></li>
+                    <li class="listtoolitem"><a href="#testimonial">Testimonials</a></li>
+                    <li class="listtoolitem"><a href="#blog">Blog</a></li>
                 </div>
             </div>
             <div class="secondbarres1">

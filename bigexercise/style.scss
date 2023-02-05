@@ -1,4 +1,22 @@
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
 
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: flex;
+        opacity: 1;
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -6,6 +24,7 @@ body{
     font-family: 'Roboto Slab', serif;
     position: relative;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 p{
     text-align: center;
@@ -35,19 +54,50 @@ p{
     justify-content: $justify;
     align-items: $align;
 }
+.contactheader{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+    transform: translateX(-20px);
+    .topcontact{
+        width: 100%;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        transform: translateX(-20px);
+    }
+    .hr{
+        border-bottom: 1px solid #e0e2eb;
+        width: 100vw;
+        padding-bottom: 10px;
+        transform: translateX(0px);
+    }
+    .linktext::after{
+        content: '';
+        display: inline-block;
+        width: .2rem;
+        height: .2rem;
+        
+        border-radius: 50%;
+        border: 2px solid #FB5472;
+        margin: 10px 10px 0px 0px;
+    }
+}
 .header{
     width: 100%;
     height: 80px;
     padding-left: 20px;
-    
-    background-color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     z-index: 10;
     position: fixed;
     top: 0;
-    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.441);
+    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0);
 }
 .logo{
     margin: 20px;
@@ -81,12 +131,195 @@ p{
 .listtool{
     display: flex;
     list-style-type: none;
+    position: relative;
 }
 .listtoolitem{
+    margin-right: -5px;
+    position: relative;
     color: #9095ad;
     font-family: sans-serif;
     padding: 20px;
     font-size: 14px;
+    cursor: pointer;
+    transition-delay: 0.5s;
+    transition: all 1s ease;
+    a{
+        color: #9095ad;
+        text-decoration: none;
+    }
+}
+.listtoolitem > a:hover{
+    color: #fa617d;
+}
+.listtoolitemactive{
+    position: relative;
+    color: #fa617d;
+    font-family: sans-serif;
+    padding: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition-delay: 0.5s;
+    transition: all 1s ease;
+    a{
+        color: #fa617d;
+        text-decoration: none;
+    }
+}
+.header .listtoolitemactive::before{
+    content: attr(data-before);
+    display: block;
+    width: .3rem;
+    height: .3rem;
+    left: 45%;
+    top: 0.5rem;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #FB5472;
+}
+.popup-form{
+    position: fixed;
+    background-color: #0000001c;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    z-index: 12;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    transition: opacity 1s ease;
+    opacity: 0;
+    visibility: hidden;
+    .submit-form{
+        width: 400px;
+        height: 600px;
+        background-color: white;
+        margin: 20px;
+        padding: 80px;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+    }
+    .popup-inputboxgroup{
+        position: relative;
+        top: 40px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        gap: 20px;
+        height: 100px;
+        .popup-inputbox{
+            height: 50px;
+            width: 100%;
+            border: 1px solid #9095ad67;
+            border-radius: 80px;
+            background-color: #1b2b7c00;
+            color: rgb(117,117,117);
+            padding-left: 20px;
+        }
+    }
+    .popup-submitbutton{
+        position: relative;
+        background-color: #fa617d;
+        width: 120px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        border-radius: 80px;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 500;
+        box-shadow: 0px 10px 10px #ffcbd5;
+        cursor: pointer;
+    }
+    .close-icon{
+        position: absolute;
+        margin-left: 430px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: white;
+        margin-top: -60px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+    }
+    .close-icon:hover{
+        color: #fa617d;
+    }
+}
+.popup-form-2{
+    position: fixed;
+    background-color: #0000001c;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    z-index: 12;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    transition: opacity 1s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.sankyou-form{
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    height: calc(100% - 40px);
+    width: 350px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: auto;
+    padding-bottom: auto;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    .close-icon-2{
+        position: absolute;
+        margin-left: 340px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: white;
+        margin-top: 20px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+    }
+    .close-icon:hover{
+        color: #fa617d;
+    }
+    svg{
+        margin-left: 80px;
+    }
+    div{
+        text-align: center;
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .popup-submitbutton-2{
+        position: relative;
+        background-color: #fa617d;
+        width: 120px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        border-radius: 80px;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 500;
+        box-shadow: 0px 10px 10px #ffcbd5;
+        cursor: pointer;
+        margin-top: 50px;
+        
+    }
 }
 .startbutton{
     font-family: sans-serif;
@@ -103,6 +336,7 @@ p{
     font-size: 15px;
     font-weight: 200;
     box-shadow: 0px 10px 10px #E6E7F0;
+    cursor: pointer;
 }
 .startbutton:hover{
     background-color: #fa617d;
@@ -110,7 +344,7 @@ p{
 .service{
     margin-left: 30px;
     margin-right: 30px;
-    margin-top: 100px;
+    margin-top: 0;
 
     position: relative;
     .text{
@@ -738,8 +972,12 @@ p{
             font-weight: 600;
             font-size: 14px;
             box-shadow: 0px 10px 10px #c5c7e1;
-
+            cursor: pointer;
+            transition: all 1s ease;
         }    
+        .startbutton2:hover{
+            background-color: #fa617d;
+        }
     }
     .firstbarres1{
         padding-left: 30px;
