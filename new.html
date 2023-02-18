@@ -1,30 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            html{
+                font-family: "Roboto", sans-serif;
+            }
+            @media (max-width: 640px){
+                .rightPanel{
+                    display: none;
+                }
+            }
+        </style>
+
     </head>
     <body>
-
-        <div class="header">
-            Header
+        <div class="flex w-[full] h-[full] ml-[56px] ">
+            <div class="w-[400px] flex flex-col gap-4 mt-[100px] leftPanel sm:w-full">
+                <div >
+                    <img src="lapechelogo.png" class="w-[194px] h-[64px]">
+                    <div class="flex flex-col gap-2">
+                        <div class="text-4xl font-bold">Find your <span class="text-[#FB7B64]">matches</span></div>
+                        <div class="text-sm font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin nunc sagittis pulvinar luctus. Proin accumsan venenatis tempor. Ut lectus mauris, suscipit eu dictum sed, feugiat id velit.</div>
+                    </div>    
+                </div>
+                <div class="flex gap-3 justify-center border border-gray-400 p-2 rounded-md">
+                    <img src="image 2.png" class="w-[28px] h-[28px]">
+                    <div class="text-base font-bold">Sign up with Google</div>
+                </div>
+                <div class="flex gap-[10px] w-full justify-center items-center">
+                    <div class="border border-[#687079] w-[179px] h-0"></div>
+                    <div class="text-base font-bold text-[#687079]">OR</div>
+                    <div class="border border-[#687079] w-[179px] h-0"></div>
+                </div>
+                <div  class="flex flex-col gap-2">
+                    <div class="text-xs font-bold">Email</div>
+                    <input type="text" class="w-[400px] h-[40px] border border-gray-400 rounded-md m-0 p-4" placeholder="Email">
+                    <div class="text-xs font-bold">Name</div>
+                    <input type="text" class="w-[400px] h-[40px] border border-gray-400 rounded-md m-0 p-4" placeholder="Enter your name">
+                    <div class="flex justify-between">
+                        <div class="flex flex-col gap-2">
+                            <div class="text-xs font-bold">Gender</div>
+                            <select class="w-[188px] h-[40px] border border-gray-400 rounded-md m-0 p-4" placeholder="Gender">
+                                <option>Man</option>
+                                <option>Woman</option>
+                                <option>Transgender</option>
+                                <option>Bisexual</option>
+                                <option>Non-binary</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="text-xs font-bold">Orientation</div>
+                            <select class="w-[188px] h-[40px] border border-gray-400 rounded-md m-0 p-4" placeholder="Please Select">
+                                <option>Straight</option> 
+                                <option>Gay</option>    
+                                <option>Lesbian</option>    
+                                <option>Bisexual</option>    
+                                <option>Asexual</option>    
+                                <option>Demisexual</option>    
+                                <option>Pansexual</option>    
+                                <option>Queer</option>    
+                                <option>Questioning</option>    
+                            </select>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="text-xs font-bold">Looking for</div>
+                    <select class="w-[400px] h-[40px] border border-gray-400 rounded-md m-0 p-4" placeholder="Please Select">
+                        <option>
+                            Long-term partnership
+                        <option>
+                            Long-term, open to short
+                        </option>
+                        <option>
+                            Short-term, open to long
+                        </option>
+                        <option>
+                            Short-term fun
+                        </option>
+                        <option>
+                            New friends
+                        </option>
+                        <option>
+                            Still figuring it out</option>
+                        </option>
+                    </select>
+                    <div class="text-xs font-bold">Password</div>
+                    <input type="text" class="w-[400px] h-[40px] border border-gray-400 rounded-md m-0 p-4" placeholder="Enter your password">
+                    <div class="text-xs font-bold">Confirm password</div>
+                    <input type="text" class="w-[400px] h-[40px] border border-gray-400 rounded-md m-0 p-4" placeholder="Enter your password">
+                    <div class="w-full bg-green-500 h-[34px] flex justify-center rounded-md items-center text-white">Create account</div>
+                </div>
+            </div> 
+            <div class="m-[24px] w-full h-[1000px] ml-[80px] p-[8] rightPanel">
+                <div class="bg-gray-300 w-full h-full flex items-end">
+                    <div class="text-7xl font-bold m-[48px] ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </div>
+            </div>
         </div>
-        <hr>
-        <div class="form">
-            <form>
-                <input type="text" id="nameinput" name="name" placeholder="Tên">
-                <input type="text" id="ageinput" name="age" placeholder="Tuổi">
-                <input type="text" id="classinput" name="class" placeholder="Lớp">
-                <button type="submit" id="submitbutton">Submit</button>
-            </form>
-        </div>
-        <hr>
-        <div class="infor">
-            Tôi tên là <span id="name"></span>, <span id="age"></span> tuổi, học lớp <span id="class"></span>
-        </div>
-        <hr>
-        <div class="footer">
-            Footer
-        </div>
-        <script language="javascript" src="new.js"></script>
-
     </body>
 </html>

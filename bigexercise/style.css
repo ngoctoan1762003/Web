@@ -381,6 +381,15 @@ p {
   border-radius: 50px;
   background-color: #fa617d;
   box-shadow: 0px 10px 20px #ffcbd5;
+  transition: all 1s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+.service .learnbutton:hover > .whiteEffect {
+  transform: translateX(-120%) translateY(-200px);
+}
+.service .learnbutton:hover > .whiteEffect2 {
+  transform: translateX(-20%) translateY(-200px);
 }
 .service .servicebox {
   position: relative;
@@ -449,12 +458,14 @@ p {
 .about .history .historytext .aboutvideo {
   margin-top: 20px;
   display: flex;
+  cursor: pointer;
 }
 .about .history .historytext .aboutvideo .aboutvideobutton {
   background-color: #fbe3e6;
   width: 100px;
   height: 100px;
   border-radius: 100%;
+  transition: all 1s ease;
 }
 .about .history .historytext .aboutvideo .aboutvideobutton .bgbutton {
   margin-left: 15px;
@@ -462,7 +473,10 @@ p {
   width: 70px;
   height: 70px;
   border-radius: 100%;
-  background-color: #fa617d;
+  background: linear-gradient(270deg, rgba(255, 195, 195, 0.8), rgb(250, 97, 125) 70.71%);
+}
+.about .history .historytext .aboutvideo .aboutvideobutton:hover {
+  transform: scale(1.2);
 }
 .about .history .historytext .aboutvideo .videotext {
   margin-left: 20px;
@@ -651,6 +665,32 @@ p {
   font-size: 14px;
   font-weight: 500;
   box-shadow: 0px 10px 10px #ffcbd5;
+  overflow: hidden;
+  cursor: pointer;
+}
+.about .whatwedo .getstarted .submitbutton .whiteEffect {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-200px);
+  background: linear-gradient(270deg, rgba(255, 195, 195, 0.8), rgb(250, 97, 125) 70.71%);
+  z-index: 0;
+  transition: all 0.5s ease;
+}
+.about .whatwedo .getstarted .submitbutton .whiteEffect2 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-200px) translateX(100%);
+  background: linear-gradient(90deg, rgba(255, 195, 195, 0.8), rgb(250, 97, 125) 70.71%);
+  z-index: 0;
+  transition: all 0.5s ease;
+}
+.about .whatwedo .getstarted .submitbutton:hover > .whiteEffect {
+  transform: translateX(-120%) translateY(-200px);
+}
+.about .whatwedo .getstarted .submitbutton:hover > .whiteEffect2 {
+  transform: translateX(-20%) translateY(-200px);
 }
 .about .whatwedo .getstarted .cardbox {
   position: relative;
@@ -667,12 +707,11 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  aspect-ratio: 1/1;
 }
 .about .whatwedo .getstarted .cardbox .card img {
   box-sizing: border-box;
   width: 80%;
-  aspect-ratio: 1/1;
+  height: 80%;
   top: 10%;
   left: 10%;
 }
@@ -839,6 +878,7 @@ p {
   padding-left: 20px;
 }
 .price .newsletter .content .textcontent .subcribebutton {
+  position: relative;
   background-color: #fa617d;
   font-family: "Montserrat";
   font-weight: 600;
@@ -850,6 +890,32 @@ p {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 10px 20px #ffcbd5;
+  overflow: hidden;
+  cursor: pointer;
+}
+.price .newsletter .content .textcontent .subcribebutton .whiteEffect {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-200px);
+  background: linear-gradient(270deg, rgba(255, 195, 195, 0.8), rgb(250, 97, 125) 70.71%);
+  z-index: 0;
+  transition: all 0.5s ease;
+}
+.price .newsletter .content .textcontent .subcribebutton .whiteEffect2 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-200px) translateX(100%);
+  background: linear-gradient(90deg, rgba(255, 195, 195, 0.8), rgb(250, 97, 125) 70.71%);
+  z-index: 0;
+  transition: all 0.5s ease;
+}
+.price .newsletter .content .textcontent .subcribebutton:hover > .whiteEffect {
+  transform: translateX(-120%) translateY(-200px);
+}
+.price .newsletter .content .textcontent .subcribebutton:hover > .whiteEffect2 {
+  transform: translateX(-20%) translateY(-200px);
 }
 .price .newsletter .content .newsbg2 {
   position: relative;
@@ -895,6 +961,8 @@ p {
   max-width: 1200px;
 }
 .blog .viewbutton {
+  position: relative;
+  overflow: hidden;
   background-color: #fa617d;
   font-family: "Montserrat";
   font-weight: 600;
@@ -905,6 +973,13 @@ p {
   border-radius: 80px;
   color: white;
   line-height: 50px;
+  cursor: pointer;
+}
+.blog .viewbutton:hover > .whiteEffect {
+  transform: translateX(-120%) translateY(-200px);
+}
+.blog .viewbutton:hover > .whiteEffect2 {
+  transform: translateX(-20%) translateY(-200px);
 }
 .blog .blogboxgroup {
   display: flex;
@@ -930,9 +1005,12 @@ p {
 .footer {
   position: relative;
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer .bg {
   position: absolute;
+  width: 100vw;
   top: -300px;
   z-index: -4;
   background: url("https://my-space.space/numerio/img/bg/footer-2.svg");
@@ -1145,6 +1223,14 @@ p {
   font-weight: 600;
 }
 
+.videotab {
+  position: fixed;
+  z-index: 11;
+  width: 100%;
+  height: 120vh;
+  background-color: rgba(0, 0, 0, 0.231372549);
+}
+
 .servicecard:nth-child(even) {
   transform: translateY(-60px);
 }
@@ -1174,6 +1260,37 @@ p {
   border-radius: 50%;
   border: 2px solid #FB5472;
   margin: 10px 10px 0px 0px;
+}
+
+.sidecanvas .linktext::after {
+  content: "";
+  display: inline-block;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  border: 2px solid #FB5472;
+  margin: 10px 10px 0px 0px;
+  transform: translateX(5px);
+}
+
+.whiteEffect {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-200px);
+  background: linear-gradient(270deg, rgba(255, 195, 195, 0.8), rgb(250, 97, 125) 70.71%);
+  z-index: 0;
+  transition: all 0.5s ease;
+}
+
+.whiteEffect2 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-200px) translateX(100%);
+  background: linear-gradient(90deg, rgba(255, 195, 195, 0.8), rgb(250, 97, 125) 70.71%);
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 /*# sourceMappingURL=style.css.map */
