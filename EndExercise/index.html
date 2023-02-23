@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <!--Add window-->
+        <div class="w-full h-[100vh] bg-[#44444463] fixed top-0 flex items-center justify-center addWindow">
+            <div class="w-[500px] h-[400px] bg-white rounded-xl flex flex-col items-center pt-10 pb-5 pl-4 pr-4 relative">
+                <p class="text-gray-500 font-bold text-[35px]">Add new todo</p>
+                <div class="mt-10 flex flex-col gap-4 w-full">
+                    <input type="text" placeholder="Category" class="category-input pl-3 border-2 w-full border-gray-400 h-10 rounded">
+                    <input type="text" placeholder="Title" class="title-input pl-3 border-2 w-full border-gray-400 h-10 rounded">
+                    <input type="text" placeholder="Content" class="content-input pl-3 border-2 w-full border-gray-400 h-20 rounded">
+                    <div class="submit-btn bg-gray-300 h-7 border-gray-700 flex items-center justify-center rounded font-medium cursor-pointer">Submit</div>
+                    <div class="exitBtn absolute">X</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Edit window-->
+        <div class="w-full h-[100vh] bg-[#44444463] fixed top-0 flex items-center justify-center editWindow">
+            <div class="w-[500px] h-[450px] bg-white rounded-xl flex flex-col items-center pt-10 pb-5 pl-4 pr-4 relative">
+                <p class="text-gray-500 font-bold text-[35px]">Edit todo</p>
+                <div class="mt-10 flex flex-col gap-4 w-full">
+                    <input type="text" placeholder="Category" class="category-edit pl-3 border-2 w-full border-gray-400 h-10 rounded">
+                    <input type="text" placeholder="Title" class="title-edit pl-3 border-2 w-full border-gray-400 h-10 rounded">
+                    <input type="text" placeholder="Content" class="content-edit pl-3 border-2 w-full border-gray-400 h-20 rounded">
+                    <div class="flex justify-around">
+                        <div>
+                            <input type="radio" name="status" value="to-do" checked>
+                            <span>To do</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="status" value="doing">
+                            <span>Doing</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="status" value="finished">
+                            <span>Finished</span>
+                        </div>
+                        
+                    </div>
+                    <div class="submit-edit-btn bg-gray-300 h-7 border-gray-700 flex items-center justify-center rounded font-medium cursor-pointer">Submit</div>
+                    <div class="exit-edit-btn absolute cursor-pointer">X</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ml-[52px] mr-5 mt-[37px]">
+            <div class="w-full h-[100px] flex justify-between items-end">
+                <div>
+                    <img src="./logo-taskio-0e358e6b5592e0b71eba2806bf4d4eb53a101a0047b739a9054d0f63e982513c 1.png" class="w-[171px] h-[58px]">
+                    <div class="flex">
+                        <p class="headerText text-[#5A5C63]">Let's get shit done</p>
+                        <img src="./peace 1.png" class=" w-[23px] h-[23px]">
+                    </div>
+                </div>
+                <div>
+                    <div class="newTaskBtn headerText text-[#5A5C63] cursor-pointer">+ New task</div>
+                </div>
+                
+            </div>
+            <div class="flex justify-between gap-[44px] h-auto">
+                <div class="w-full h-full">
+                    <div class="h-[34px] w-full bg-[#00A6DA] flex justify-between pl-5 pr-[7px] items-center rounded">
+                        <p class="cateText text-white font-bold text-[16px]" style="font-family: 'Plus Jakarta Sans';">To do</p>
+                        <div class="w-[20px] h-[20px] rounded bg-[#00CDDA] flex items-center justify-center">
+                            <p class="text-white font-bold" style="font-family: 'Plus Jakarta Sans';">0</p>
+                        </div>
+                    </div>
+                    <div class="w-full h-0 mt-4 border-2 border-solid border-[#00A6DA]"></div>
+                    <div class="box todo-box h-full w-full mt-7">
+                        <div class="card">
+                            <div class="cardHeader">
+                                <div class="info">
+                                    <p class="category">Marketing</p>
+                                    <p class="title">Write SEO article for new product</p>
+                                </div>
+                                <div class="icon">
+                                    <div class="editIcon flex">
+                                        <iconify-icon icon="teenyicons:edit-1-outline" class="w-[16px] h-[18px]"></iconify-icon>
+                                        <iconify-icon icon="iconoir:trash"  class="w-[24px] h-[25px] ml-5"></iconify-icon>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-0 w-[80%] border-2 border-solid border-[#DBDBDB] mt-[20px]"></div>
+                            <p class="content">This is an existential moment for effective altruism and the rationalist community writ-large.</p>
+                            <div class="timeBox flex gap-[7px] items-center">
+                                <iconify-icon icon="mdi:clock-time-nine-outline" flip="horizontal"></iconify-icon>
+                                <p class="time">June 30, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full h-full">
+                    <div class="h-[34px] w-full bg-[#ccab038a] flex justify-between pl-5 pr-[7px] items-center rounded">
+                        <p class="cateText text-white font-bold text-[16px]" style="font-family: 'Plus Jakarta Sans';">Doing</p>
+                        <div class="w-[20px] h-[20px] rounded bg-[#DAB700] flex items-center justify-center">
+                            <p class="text-white font-bold" style="font-family: 'Plus Jakarta Sans';">0</p>
+                        </div>
+                    </div>
+                    <div class="w-full h-0 mt-4 border-2 border-solid border-[#ccab038a]"></div>
+                    <div class="box doing-box h-full w-full mt-7"></div>
+                </div>
+                <div class="w-full h-full">
+                    <div class="h-[34px] w-full bg-[#3BC057] flex justify-between pl-5 pr-[7px] items-center rounded">
+                        <p class="cateText text-white font-bold text-[16px]" style="font-family: 'Plus Jakarta Sans';">Finished</p>
+                        <div class="w-[20px] h-[20px] rounded bg-[#69CE7E] flex items-center justify-center">
+                            <p class="text-white font-bold" style="font-family: 'Plus Jakarta Sans';">0</p>
+                        </div>
+                    </div>
+                    <div class="w-full h-0 mt-4 border-2 border-solid border-[#3BC057]"></div>
+                    <div class="box finished-box h-full w-full mt-7"></div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./index.js"></script>
+
+    </body>
+</html>
