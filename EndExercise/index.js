@@ -4,6 +4,15 @@ let currentDrag
 let addWindow = document.querySelector('.addWindow')
 let editWindow = document.querySelector('.editWindow')
 let boxes = document.querySelectorAll('.box')
+let containers = document.querySelectorAll('.container')
+let toggles = document.querySelectorAll('.toggle-btn')
+
+toggles.forEach((toggle) => {
+    toggle.addEventListener('click', (e) => {
+        e.preventDefault()
+        toggle.parentElement.classList.toggle('active')
+    })
+})
 
 boxes.forEach((box) => {
     box.addEventListener('dragover', (e) => {

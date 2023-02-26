@@ -2,10 +2,19 @@ p{
     font-family: 'Plus Jakarta Sans';
 }
 .box{
+    transition-property: height;
+    transition-duration: 0.5s;
+}
+.container .box{
     max-width: 100%;
     max-height: 600px;
     height: auto;
     overflow-y: scroll;
+
+}
+.container.active .box{
+    height: 0;
+    overflow: hidden;
 }
 .card{
     height: 216px;
